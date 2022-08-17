@@ -1,5 +1,93 @@
 :root {
   --white: #fff;
   --black: #000;
-  --blue: #2196f3;
+  --brand-black: #212121;
+  --grey: #757575;
+  --brand-blue: #2196f3;
+  --lightgrey: #ffffff99;
+}
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  color: var(--brand-black);
+  background-color: var(--lightgrey);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding: 0;
+}
+.list {
+  list-style-type: none;
+}
+.list a {
+  text-decoration: none;
+}
+/*header*/
+.navi-link {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--band-black);
+}
+.head-logo {
+  color: var(--black);
+}
+.navi-link:hover,
+.navi-link:focus {
+  color: var(--brand-blue);
+}
+.contacts-link {
+  color: var(--grey);
+  text-decoration: none;
+}
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--brand-blue);
+}
+/*Footer*/
+.foot {
+  background-color: #2f303a;
+  color: var(--white);
+}
+.foot-logo {
+  color: var(--white);
+}
+.foot-contacts-link {
+  text-decoration: none;
+  color: var(--lightgrey);
+}
+.mail {
+  line-height: 1.71;
+}
+/*Logo WebStudio*/
+.logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.logo-color {
+  color: var(--brand-blue);
+}
+/* Main */
+.title-box {
+  background-color: #2f303a;
+}
+.title {
+  font-weight: 900;
+  font-size: 44px;
+  color: var(--white);
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.title-button {
+  background-color: var(--brand-blue);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  cursor: pointer;
 }

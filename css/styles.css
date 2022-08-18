@@ -21,35 +21,28 @@ body {
   list-style-type: none;
   display: inline;
 }
-.list a {
-  text-decoration: none;
-}
 /*header*/
 .head {
   background-color: var(--white);
 }
 .navi-link {
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   color: var(--band-black);
+  text-decoration: none;
 }
 .head-logo {
   color: var(--black);
 }
-.navi-link:hover,
-.navi-link:focus,
-.navi-link:active {
+.link:hover,
+.link:focus {
+  color: var(--brand-blue);
+}
+.link-active:active {
   color: var(--brand-blue);
 }
 .contacts-link {
   color: var(--grey);
   text-decoration: none;
-}
-.contacts-link:hover,
-.contacts-link:focus {
-  color: var(--brand-blue);
 }
 /*Footer*/
 .foot {
@@ -61,10 +54,6 @@ body {
 }
 .foot-contacts-link {
   color: var(--lightgrey);
-}
-.foot-contacts-link:hover,
-.foot-contacts-link:focus {
-  color: var(--brand-blue);
 }
 .mail {
   line-height: 1.71;
@@ -82,6 +71,7 @@ body {
 }
 /* Main */
 .headline-secondary {
+  font-size: 36;
   font-weight: 700;
   line-height: 1.17;
   text-align: center;
@@ -125,11 +115,36 @@ body {
   color: var(--grey);
   text-align: center;
 }
-.offer h4 {
+.offer-title {
   font-weight: 700;
   line-height: 1.17;
 }
-.offer p {
+.offer-text {
   color: var(--grey);
   line-height: 1.71;
+}
+.card {
+  background-color: var(--white);
+}
+/* portfolio */
+.button-item {
+  background-color: var(--background-grey);
+  font-weight: 500;
+  line-height: 1.62;
+  cursor: pointer;
+}
+.button-item:hover,
+.button-item:focus {
+  background-color: var(--brand-blue);
+  color: var(--white);
+}
+.title-item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+.text-item {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--grey);
 }

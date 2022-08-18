@@ -29,6 +29,7 @@ body {
   line-height: 1.14;
   color: var(--band-black);
   text-decoration: none;
+  letter-spacing: 0.02em;
 }
 .head-logo {
   color: var(--black);
@@ -43,6 +44,7 @@ body {
 .contacts-link {
   color: var(--grey);
   text-decoration: none;
+  letter-spacing: 0.02em;
 }
 /*Footer*/
 .foot {
@@ -94,6 +96,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.06em;
   text-align: center;
   cursor: pointer;
 }
@@ -142,6 +145,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
 }
 .text-item {
   font-size: 16px;

@@ -132,8 +132,10 @@ body {
 /* portfolio */
 .button-item {
   background-color: var(--background-grey);
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
+  text-align: center;
   cursor: pointer;
 }
 .button-item:hover,

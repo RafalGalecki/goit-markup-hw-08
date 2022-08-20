@@ -35,6 +35,9 @@ body {
 }
 /*header*/
 .head {
+  position: absolute;
+  display: flex;
+  height: 80px;
   background-color: var(--white);
 }
 .navi-link {
@@ -42,6 +45,13 @@ body {
   color: var(--band-black);
   text-decoration: none;
   letter-spacing: 0.02em;
+}
+.navi-list {
+  display: block;
+}
+.inline {
+  display: inline;
+  padding: 23px;
 }
 .head-logo {
   color: var(--black);
@@ -78,6 +88,7 @@ body {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
+  padding-left: 215px;
   text-decoration: none;
 }
 .logo-color {
@@ -91,6 +102,9 @@ body {
   text-align: center;
 }
 .title-box {
+  position: relative;
+  left: 0px;
+  top: 80px;
   background-color: #2f303a;
 }
 .title {

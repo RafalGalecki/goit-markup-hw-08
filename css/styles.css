@@ -24,6 +24,11 @@ body {
   margin: 0;
   padding: 0;
 }
+.container {
+  width: 1200px;
+  justify-content: center;
+  margin: 0 auto;
+}
 .list {
   list-style-type: none;
   display: inline;

@@ -18,205 +18,207 @@
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="head">
-      <h3>
-        <a
-          class="logo head-logo"
-          href="./index.html"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><span class="logo-color">Web</span>Studio</a
-        >
-      </h3>
-      <nav>
+    <div class="container">
+      <header class="head">
+        <h3>
+          <a
+            class="logo head-logo"
+            href="./index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span class="logo-color">Web</span>Studio</a
+          >
+        </h3>
+        <nav>
+          <ul class="list">
+            <li>
+              <a class="link navi-link link-active" href="./index.html"
+                >Agencja</a
+              >
+            </li>
+            <li>
+              <a class="link navi-link" href="./portfolio.html" target="_blank"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a class="link navi-link" href="#contacts">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
         <ul class="list">
           <li>
-            <a class="link navi-link link-active" href="./index.html"
-              >Agencja</a
+            <!-- Link to e-mail address  -->
+            <a class="link contacts-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="link navi-link" href="./portfolio.html" target="_blank"
-              >Portfolio</a
+            <!-- Link to phone number  -->
+            <a class="link contacts-link" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+          </li>
+        </ul>
+      </header>
+      <main>
+        <section class="title-box">
+          <h1 class="title">EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU</h1>
+          <button class="title-button" type="button">Zamów usługę</button>
+        </section>
+        <section>
+          <ul class="list offer">
+            <li>
+              <h4 class="offer-title">LOREM IPSUM</h4>
+              <p class="offer-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                molestias quasi, perspiciatis maxime unde quae harum officiis?
+                Doloremque, quasi iste!
+              </p>
+            </li>
+            <li>
+              <h4 class="offer-title">LOREM IPSUM</h4>
+              <p class="offer-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                molestias quasi, perspiciatis maxime unde quae harum officiis?
+                Doloremque, quasi iste!
+              </p>
+            </li>
+            <li>
+              <h4 class="offer-title">LOREM IPSUM</h4>
+              <p class="offer-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                molestias quasi, perspiciatis maxime unde quae harum officiis?
+                Doloremque, quasi iste!
+              </p>
+            </li>
+            <li>
+              <h4 class="offer-title">LOREM IPSUM</h4>
+              <p class="offer-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                molestias quasi, perspiciatis maxime unde quae harum officiis?
+                Doloremque, quasi iste!
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2 class="headline-secondary">Czym się zajmujemy</h2>
+          <ul class="list">
+            <li>
+              <img
+                src="images/img_01.jpg"
+                alt="Ekran laptopa, tablet i dłonie na klawiaturze."
+                width="370"
+                height="294"
+              />
+            </li>
+            <li>
+              <img
+                src="images/img_02.jpg"
+                alt="Smartfon trzymany przed ekranem komputera z obrazem ekranów smartfona."
+                width="370"
+                height="294"
+              />
+            </li>
+            <li>
+              <img
+                src="images/img_03.jpg"
+                alt="Paleta kolorów na tablecie porównywana z paletą na ekranie komputera."
+                width="370"
+                height="294"
+              />
+            </li>
+          </ul>
+        </section>
+        <section class="team">
+          <h2 class="headline-secondary">Nasz zespół</h2>
+          <ul class="list">
+            <li>
+              <figure class="card">
+                <img
+                  src="images/img-p_01.jpg"
+                  alt="Portret mężczyzny. Młody, biały, z brodą, w okularach, uśmiechnięty."
+                  width="270"
+                  height="260"
+                />
+                <figcaption>
+                  <b class="name">John Doe</b>
+                  <p class="position">Product Designer</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="card">
+                <img
+                  src="images/img-p_02.jpg"
+                  alt="Portret kobiety. Blondynka, w okularach, uśmiecha się."
+                  width="270"
+                  height="260"
+                />
+                <figcaption>
+                  <b class="name">John Doe</b>
+                  <p class="position">Frontend Developer</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="card">
+                <img
+                  src="images/img-p_03.jpg"
+                  alt="Portret mężczyzny. Młody, biały, uśmiechnięty, jasna koszula."
+                  width="270"
+                  height="260"
+                />
+                <figcaption>
+                  <b class="name">John Doe</b>
+                  <p class="position">Marketing</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="card">
+                <img
+                  src="images/img-p_04.jpg"
+                  alt="Portret mężczyzny. Młody brunet, biały, z brodą i w okularach."
+                  width="270"
+                  height="260"
+                />
+                <figcaption>
+                  <b class="name">John Doe</b>
+                  <p class="position">UI Designer</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer class="foot">
+        <h3>
+          <a
+            class="logo foot-logo"
+            href="./index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span class="logo-color">Web</span>Studio</a
+          >
+        </h3>
+        <address class="mail">
+          <p>m. Warszawa, Aleje Jerozolimskie 21</p>
+        </address>
+        <ul class="list">
+          <li>
+            <a class="link foot-contacts-link" href="mailto:info@example.com"
+              >info@example.com</a
             >
           </li>
           <li>
-            <a class="link navi-link" href="#contacts">Kontakt</a>
+            <a class="link foot-contacts-link" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="list">
-        <li>
-          <!-- Link to e-mail address  -->
-          <a class="link contacts-link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <!-- Link to phone number  -->
-          <a class="link contacts-link" href="tel:+48111111111"
-            >+48 111 111 111</a
-          >
-        </li>
-      </ul>
-    </header>
-    <main>
-      <section class="title-box">
-        <h1 class="title">EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU</h1>
-        <button class="title-button" type="button">Zamów usługę</button>
-      </section>
-      <section>
-        <ul class="list offer">
-          <li>
-            <h4 class="offer-title">LOREM IPSUM</h4>
-            <p class="offer-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-              molestias quasi, perspiciatis maxime unde quae harum officiis?
-              Doloremque, quasi iste!
-            </p>
-          </li>
-          <li>
-            <h4 class="offer-title">LOREM IPSUM</h4>
-            <p class="offer-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-              molestias quasi, perspiciatis maxime unde quae harum officiis?
-              Doloremque, quasi iste!
-            </p>
-          </li>
-          <li>
-            <h4 class="offer-title">LOREM IPSUM</h4>
-            <p class="offer-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-              molestias quasi, perspiciatis maxime unde quae harum officiis?
-              Doloremque, quasi iste!
-            </p>
-          </li>
-          <li>
-            <h4 class="offer-title">LOREM IPSUM</h4>
-            <p class="offer-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-              molestias quasi, perspiciatis maxime unde quae harum officiis?
-              Doloremque, quasi iste!
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2 class="headline-secondary">Czym się zajmujemy</h2>
-        <ul class="list">
-          <li>
-            <img
-              src="images/img_01.jpg"
-              alt="Ekran laptopa, tablet i dłonie na klawiaturze."
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img
-              src="images/img_02.jpg"
-              alt="Smartfon trzymany przed ekranem komputera z obrazem ekranów smartfona."
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img
-              src="images/img_03.jpg"
-              alt="Paleta kolorów na tablecie porównywana z paletą na ekranie komputera."
-              width="370"
-              height="294"
-            />
-          </li>
-        </ul>
-      </section>
-      <section class="team">
-        <h2 class="headline-secondary">Nasz zespół</h2>
-        <ul class="list">
-          <li>
-            <figure class="card">
-              <img
-                src="images/img-p_01.jpg"
-                alt="Portret mężczyzny. Młody, biały, z brodą, w okularach, uśmiechnięty."
-                width="270"
-                height="260"
-              />
-              <figcaption>
-                <b class="name">John Doe</b>
-                <p class="position">Product Designer</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="card">
-              <img
-                src="images/img-p_02.jpg"
-                alt="Portret kobiety. Blondynka, w okularach, uśmiecha się."
-                width="270"
-                height="260"
-              />
-              <figcaption>
-                <b class="name">John Doe</b>
-                <p class="position">Frontend Developer</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="card">
-              <img
-                src="images/img-p_03.jpg"
-                alt="Portret mężczyzny. Młody, biały, uśmiechnięty, jasna koszula."
-                width="270"
-                height="260"
-              />
-              <figcaption>
-                <b class="name">John Doe</b>
-                <p class="position">Marketing</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="card">
-              <img
-                src="images/img-p_04.jpg"
-                alt="Portret mężczyzny. Młody brunet, biały, z brodą i w okularach."
-                width="270"
-                height="260"
-              />
-              <figcaption>
-                <b class="name">John Doe</b>
-                <p class="position">UI Designer</p>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer class="foot">
-      <h3>
-        <a
-          class="logo foot-logo"
-          href="./index.html"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><span class="logo-color">Web</span>Studio</a
-        >
-      </h3>
-      <address class="mail">
-        <p>m. Warszawa, Aleje Jerozolimskie 21</p>
-      </address>
-      <ul class="list">
-        <li>
-          <a class="link foot-contacts-link" href="mailto:info@example.com"
-            >info@example.com</a
-          >
-        </li>
-        <li>
-          <a class="link foot-contacts-link" href="tel:+48111111111"
-            >+48 111 111 111</a
-          >
-        </li>
-      </ul>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

@@ -1,3 +1,10 @@
+/* global border-box - not necessary if modern.normailze stylesheet is linked
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*/
 :root {
   --white: #fff;
   --black: #000;

@@ -34,60 +34,11 @@ body {
   list-style-type: none;
   display: inline;
 }
-/*header*/
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
-.head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--white);
-  border-bottom: 1px solid var(--border-head);
-  height: 80px;
-}
-.navi-link {
-  line-height: 1.14;
-  color: var(--band-black);
-  text-decoration: none;
-  letter-spacing: 0.02em;
-}
-.navi-list {
-  display: flex;
-}
-.inline {
-  display: inline;
-}
-.head-logo {
-  color: var(--black);
-}
-.link:hover,
-.link:focus {
-  color: var(--brand-blue);
-}
-.link-active {
-  color: var(--brand-blue);
-}
-.address-head {
-
-}
-.contacts-link {
-  color: var(--grey);
-  text-decoration: none;
-  letter-spacing: 0.02em;
-}
-/*Footer*/
-.foot {
-  background-color: #2f303a;
-  color: var(--white);
-}
-.foot-logo {
-  color: var(--white);
-}
-.foot-contacts-link {
-  color: var(--lightgrey);
-}
-.mail {
-  line-height: 1.71;
-}
 /*Logo WebStudio*/
 .logo {
   font-family: "Raleway";
@@ -98,6 +49,80 @@ body {
 }
 .logo-color {
   color: var(--brand-blue);
+}
+/*header*/
+.head-logo {
+  color: var(--black);
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 70px;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border-head);
+  height: 80px;
+}
+.navi-link {
+  line-height: 1.14;
+  color: var(--band-black);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.navi-block {
+  width: 190px;
+}
+.navi-list {
+  display: flex;
+}
+.navi-link {
+  margin-right: 34px;
+}
+.inline {
+  display: inline;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--brand-blue);
+}
+.link-active {
+  color: var(--brand-blue);
+}
+.address-head {
+padding-left: 0;
+margin-left: 278px;
+}
+.contacts-link {
+  color: var(--grey);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.contacts-link:last-of-type {
+margin-left: 37px;
+}
+/*Footer*/
+.foot {
+  background-color: #2f303a;
+  color: var(--white);
+  display: block;
+}
+.foot-logo {
+  color: var(--white);
+  padding-top: 60px;
+  margin-bottom: 20px;
+}
+.foot-contacts-link {
+  color: var(--lightgrey);
+}
+.mail {
+  line-height: 1.71;
+}
+.mail > p {
+  margin-top: 20;
+  margin-bottom: 9;
 }
 /* Main */
 .headline-secondary {

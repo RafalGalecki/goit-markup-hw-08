@@ -104,22 +104,34 @@ body {
   background-color: #2f303a;
   color: var(--white);
   display: block;
-}
-.foot-logo {
-  color: var(--white);
   padding-top: 60px;
-  margin-bottom: 20px;
+  padding-bottom: 60px;
 }
-.foot-contacts-link {
+.logo-foot {
+  color: var(--white);
+}
+.foot>h3 {
+  margin: 0;
+}
+.contacts-link-foot {
   color: var(--lightgrey);
+}
+.contacts-link-foot-item:first-of-type {
+  padding-bottom: 9px;
 }
 .mail {
   line-height: 1.71;
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
 .mail > p {
-  margin-top: 20;
-  margin-bottom: 9;
+  margin: 0;
 }
+.contacts-link-list-foot {
+padding: 0;
+margin: 0;
+}
+
 /* Index Main */
 
 /* Title section */
@@ -159,7 +171,6 @@ body {
 /* Offer section */
 .offer-section {
   background-color: var(--background-white);
-  border: 3px solid green;
 }
 .offer {
   display: flex;
@@ -212,14 +223,10 @@ body {
   background-color: var(--background-grey);
   display: flex;
 }
-.team-box {
-  border: 2px solid black;
-}
 .team-list {
   display: flex;
   justify-content: space-between;
   max-width: 100%;
-  border: 2px solid greenyellow;
   margin: 0;
   padding: 0;
 }
@@ -247,7 +254,6 @@ body {
   text-align: center;
   margin: 0;
 }
-
 .card {
   display: block;
   max-width: 100%;

@@ -15,6 +15,7 @@
   --background-grey: #f5f4fa;
   --background-white: #e5e5e5;
   --border-head: #ececec;
+  --grid-item: #eeeeee;
 }
 body {
   font-family: "Roboto", "Raleway", sans-serif;
@@ -50,19 +51,23 @@ body {
 .logo-color {
   color: var(--brand-blue);
 }
+.head-logo-block {
+  margin: 0;
+}
 /*header*/
 .head-logo {
   color: var(--black);
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding: 0;
   margin-right: 70px;
 }
 .head {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--white);
   border-bottom: 1px solid var(--border-head);
-  height: 80px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .navi-link {
   line-height: 1.14;
@@ -110,7 +115,7 @@ body {
 .logo-foot {
   color: var(--white);
 }
-.foot>h3 {
+.foot > h3 {
   margin: 0;
 }
 .contacts-link-foot {
@@ -128,8 +133,8 @@ body {
   margin: 0;
 }
 .contacts-link-list-foot {
-padding: 0;
-margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 /* Index Main */
@@ -204,6 +209,7 @@ margin: 0;
   justify-content: center;
   max-width: 100%;
   padding-left: 0;
+  margin: 0;
 }
 .offer-item:not(:last-child) {
   padding-right: 30px;
@@ -212,9 +218,6 @@ margin: 0;
   display: block;
   max-width: 100%;
   padding: 0;
-  margin: 0;
-}
-.offer-pictures {
   margin: 0;
 }
 
@@ -266,7 +269,18 @@ margin: 0;
 }
 
 /* portfolio */
-.button-item {
+.filter {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.filter-item {
+  margin-bottom: 50px;
+}
+.filter-button {
+  display: block;
   background-color: var(--background-grey);
   font-size: 16px;
   font-weight: 500;
@@ -275,11 +289,31 @@ margin: 0;
   cursor: pointer;
   border: none;
   border-radius: 4px;
+  padding: 6px 22px;
 }
-.button-item:hover,
-.button-item:focus {
+.filter-button:hover,
+.filter-button:focus {
   background-color: var(--brand-blue);
   color: var(--white);
+}
+.filter-item:not(:last-of-type) {
+  padding-right: 8px;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.grid-item {
+  background-color: var(--white);
+  border: 1px solid var(--grid-item);
+}
+.grid-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.grid-item:not(:nth-child(n + 7)) {
+  margin-bottom: 30px;
 }
 .title-item {
   font-weight: 700;

@@ -34,6 +34,8 @@ body {
 .list {
   list-style-type: none;
   display: inline;
+  margin: 0;
+  padding: 0;
 }
 .section {
   padding-top: 94px;
@@ -51,15 +53,13 @@ body {
 .logo-color {
   color: var(--brand-blue);
 }
-.head-logo-block {
-  margin: 0;
-}
-/*header*/
 .head-logo {
   color: var(--black);
-  padding: 0;
-  margin-right: 70px;
 }
+
+/* -------------INDEX------------ */
+
+/* ---Header----*/
 .head {
   display: flex;
   justify-content: space-between;
@@ -68,6 +68,12 @@ body {
   border-bottom: 1px solid var(--border-head);
   padding-top: 24px;
   padding-bottom: 24px;
+}
+.head .head-logo {
+  margin-right: 93px;
+}
+.head .navi-list {
+  margin-right: 371px;
 }
 .navi-link {
   line-height: 1.14;
@@ -78,13 +84,13 @@ body {
 .navi-list {
   display: flex;
 }
-.navi-link {
-  margin-right: 34px;
+.navi-list > .block:not(:last-child) {
+  margin-right: 46px;
 }
-.inline {
-  display: inline;
+.block {
+  display: block;
+  margin: 0;
 }
-
 .link:hover,
 .link:focus {
   color: var(--brand-blue);
@@ -92,19 +98,19 @@ body {
 .link-active {
   color: var(--brand-blue);
 }
-.address-head {
-  padding-left: 0;
-  margin-left: 278px;
+.list-head {
+  display: flex;
 }
 .contacts-link {
   color: var(--grey);
   text-decoration: none;
   letter-spacing: 0.02em;
 }
-.contacts-link:last-of-type {
-  margin-left: 37px;
+.list-head > .block:not(:last-child) {
+  margin-right: 50px;
 }
-/*Footer*/
+
+/*----Footer-----*/
 .foot {
   background-color: #2f303a;
   color: var(--white);
@@ -132,14 +138,8 @@ body {
 .mail > p {
   margin: 0;
 }
-.contacts-link-list-foot {
-  padding: 0;
-  margin: 0;
-}
 
-/* Index Main */
-
-/* Title section */
+/* -----Title section------ */
 .title-box {
   display: flex;
   flex-direction: column;
@@ -156,6 +156,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+  margin-top: 0;
 }
 .title-button {
   background-color: var(--brand-blue);
@@ -173,25 +174,18 @@ body {
   margin: 0 auto;
 }
 
-/* Offer section */
+/* -----Offer section----- */
 .offer-section {
   background-color: var(--background-white);
 }
-.offer {
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
 .offer-post {
+  margin: auto;
   margin-bottom: 94px;
 }
-.headline-secondary {
-  margin-top: 0;
-  margin-bottom: 50px;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.17;
-  text-align: center;
+.offer {
+  display: flex;
+  height: 100%;
+  gap: 30px;
 }
 .offer-title {
   font-weight: 700;
@@ -204,37 +198,31 @@ body {
   line-height: 1.71;
   margin: 0;
 }
+.headline-secondary {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+}
 .offer-pictures {
   display: flex;
   justify-content: center;
-  max-width: 100%;
-  padding-left: 0;
-  margin: 0;
-}
-.offer-item:not(:last-child) {
-  padding-right: 30px;
-}
-.offer-picture {
-  display: block;
-  max-width: 100%;
-  padding: 0;
-  margin: 0;
+  height: 100%;
+  gap: 30px;
 }
 
-/* Team section */
+/* -----Team section---- */
 .team-section {
   background-color: var(--background-grey);
   display: flex;
 }
 .team-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 100%;
-  margin: 0;
-  padding: 0;
-}
-.team-list-item:not(:last-child) {
-  padding-right: 30px;
+  gap: 30px;
 }
 .portrait-description {
   display: flex;
@@ -258,8 +246,6 @@ body {
   margin: 0;
 }
 .card {
-  display: block;
-  max-width: 100%;
   padding: 0;
   margin: 0;
   background-color: var(--white);
@@ -268,19 +254,15 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-/* portfolio */
+/* -----------------PORTFOLIO------------- */
 .filter {
   display: flex;
   justify-content: center;
-  max-width: 100%;
-  padding: 0;
-  margin: 0;
 }
 .filter-item {
   margin-bottom: 50px;
 }
 .filter-button {
-  display: block;
   background-color: var(--background-grey);
   font-size: 16px;
   font-weight: 500;
@@ -302,27 +284,30 @@ body {
 .grid {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
+  justify-content: center;
+  gap: 30px;
+  
 }
 .grid-item {
   background-color: var(--white);
-  border: 1px solid var(--grid-item);
 }
-.grid-item:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-.grid-item:not(:nth-child(n + 7)) {
-  margin-bottom: 30px;
+.grid-item-description {
+  border-bottom: 1px solid var(--grid-item);
+  border-right: 1px solid var(--grid-item);
+  border-left: 1px solid var(--grid-item);
+  padding: 20px 0 20px 24px;
 }
 .title-item {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin: 0;
+  padding-bottom: 4px;
 }
 .text-item {
   font-size: 16px;
   line-height: 1.87;
   color: var(--grey);
+  margin: 0;
 }

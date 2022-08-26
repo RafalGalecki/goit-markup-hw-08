@@ -16,11 +16,11 @@
   --background-white: #e5e5e5;
   --border-head: #ececec;
   --grid-item: #eeeeee;
+  --brand-dark: #2f303a;
 }
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: var(--brand-black);
-  background-color: var(--background-white);
   font-size: 14px;
   letter-spacing: 0.03em;
   margin: 0;
@@ -111,8 +111,10 @@ body {
 }
 
 /*----Footer-----*/
+.foot-background {
+  background-color: var(--brand-dark);
+}
 .foot {
-  background-color: #2f303a;
   color: var(--white);
   display: block;
   padding-top: 60px;
@@ -143,7 +145,7 @@ body {
 .title-box {
   display: flex;
   flex-direction: column;
-  background-color: #2f303a;
+  background-color: var(--brand-dark);
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -175,9 +177,6 @@ body {
 }
 
 /* -----Offer section----- */
-.offer-section {
-  background-color: var(--background-white);
-}
 .offer-post {
   margin: auto;
   margin-bottom: 94px;

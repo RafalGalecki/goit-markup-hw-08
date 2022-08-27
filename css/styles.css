@@ -111,7 +111,7 @@ body {
 }
 
 /*----Footer-----*/
-.foot-background {
+.background-dark {
   background-color: var(--brand-dark);
 }
 .foot {
@@ -145,7 +145,6 @@ body {
 .title-box {
   display: flex;
   flex-direction: column;
-  background-color: var(--brand-dark);
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -285,7 +284,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  
 }
 .grid-item {
   background-color: var(--white);

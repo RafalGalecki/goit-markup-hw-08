@@ -17,6 +17,7 @@
   --border-head: #ececec;
   --grid-item: #eeeeee;
   --brand-dark: #2f303a;
+  --background-title: #2f303a66;
 }
 body {
   font-family: "Roboto", "Raleway", sans-serif;
@@ -142,6 +143,10 @@ body {
 }
 
 /* -----Title section------ */
+.background-title {
+  background-color: var(--background-title);
+  background-image: url("./images/title-background-img.jpg");
+}
 .title-box {
   display: flex;
   flex-direction: column;

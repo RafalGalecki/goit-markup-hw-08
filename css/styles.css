@@ -145,8 +145,9 @@ body {
 /* -----Title section------ */
 .title-section {
   background-color: var(--background-title);
-}
-.background-title {
+  }
+  
+ .background-title {
   background-image: linear-gradient(
       var(--background-title),
       var(--background-title)
@@ -191,6 +192,20 @@ body {
 }
 
 /* -----Offer section----- */
+.offer-icon-box {
+  width: auto;
+  height: 120px;
+  /* background-color: var(--background-grey); */
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.offer-icon {
+ 
+  /* background-color: var(--brand-black); */
+}
+.icon {
+ fill: currentColor;
+}
 .offer-post {
   margin: auto;
   margin-bottom: 94px;

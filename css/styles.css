@@ -143,9 +143,19 @@ body {
 }
 
 /* -----Title section------ */
-.background-title {
+.title-section {
   background-color: var(--background-title);
-  background-image: url("./images/title-background-img.jpg");
+}
+.background-title {
+  background-image: linear-gradient(
+      var(--background-title),
+      var(--background-title)
+    ),
+    url("../images/title-background-img.jpg");
+  width: 1600px;
+  background-size: auto auto;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .title-box {
   display: flex;

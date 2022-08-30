@@ -145,9 +145,9 @@ body {
 /* -----Title section------ */
 .title-section {
   background-color: var(--background-title);
-  }
-  
- .background-title {
+}
+
+.background-title {
   background-image: linear-gradient(
       var(--background-title),
       var(--background-title)
@@ -193,18 +193,22 @@ body {
 
 /* -----Offer section----- */
 .offer-icon-box {
-  width: auto;
-  height: 120px;
+  /* width: 270px;
+  height: 120px; */
   /* background-color: var(--background-grey); */
   border-radius: 4px;
   margin-bottom: 30px;
 }
 .offer-icon {
- 
-  /* background-color: var(--brand-black); */
+  width: 270px;
+  height: 120px;
+  fill: currentColor;
 }
-.icon {
- fill: currentColor;
+.icon-social {
+  width: 44px;
+  height: 44px;
+  fill: currentColor;
+  border: 1px solid black;
 }
 .offer-post {
   margin: auto;

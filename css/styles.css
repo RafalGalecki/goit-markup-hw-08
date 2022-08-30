@@ -143,16 +143,13 @@ body {
 }
 
 /* -----Title section------ */
-.title-section {
-  background-color: var(--background-title);
-}
-
 .background-title {
   background-image: linear-gradient(
       var(--background-title),
       var(--background-title)
     ),
     url("../images/title-background-img.jpg");
+    background-color: var(--background-title);
   width: 1600px;
   background-size: auto auto;
   background-position: center;
@@ -199,6 +196,14 @@ body {
   border-radius: 4px;
   margin-bottom: 30px;
 }
+/* .icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  } */
 .offer-icon {
   width: 270px;
   height: 120px;
@@ -207,8 +212,10 @@ body {
 .icon-social {
   width: 44px;
   height: 44px;
-  fill: currentColor;
-  border: 1px solid black;
+  fill: white;
+  border: none;
+  border-radius: 50%;
+  background-color: #2196f3;
 }
 .offer-post {
   margin: auto;

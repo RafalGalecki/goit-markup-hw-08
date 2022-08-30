@@ -210,20 +210,11 @@ padding-top: 12px;
 
 /* -----Offer section----- */
 .offer-icon-box {
-  /* width: 270px;
-  height: 120px; */
-  /* background-color: var(--background-grey); */
+  background-color: var(--background-grey);
   border-radius: 4px;
   margin-bottom: 30px;
 }
-/* .icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-  } */
+
 .offer-icon {
   width: 270px;
   height: 120px;

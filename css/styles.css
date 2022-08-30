@@ -149,7 +149,7 @@ body {
       var(--background-title)
     ),
     url("../images/title-background-img.jpg");
-    background-color: var(--background-title);
+  background-color: var(--background-title);
   width: 1600px;
   background-size: auto auto;
   background-position: center;

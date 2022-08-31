@@ -362,6 +362,8 @@ body {
 .filter-button:focus {
   background-color: var(--brand-blue);
   color: var(--white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .filter-item:not(:last-of-type) {
   padding-right: 8px;
@@ -374,6 +376,7 @@ body {
 }
 .grid-item {
   background-color: var(--white);
+  cursor: pointer;
 }
 .grid-item-description {
   border-bottom: 1px solid var(--grid-item);
@@ -394,4 +397,9 @@ body {
   line-height: 1.87;
   color: var(--grey);
   margin: 0;
+}
+.grid-item:hover,
+.grid-item:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }

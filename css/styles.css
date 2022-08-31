@@ -81,10 +81,8 @@ body {
   margin-right: 345px;
 }
 .navi-link {
-  /* line-height: 1.14; */
   color: var(--band-black);
   text-decoration: none;
-  /* letter-spacing: 0.02em; */
 }
 .navi-list {
   display: flex;
@@ -109,6 +107,7 @@ body {
   align-items: center;
 }
 .contacts-link {
+  display: flex;
   color: var(--grey);
   text-decoration: none;
   letter-spacing: 0.02em;

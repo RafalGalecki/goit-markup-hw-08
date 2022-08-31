@@ -338,6 +338,36 @@ body {
   fill: var(--white);
   background-color: var(--brand-blue);
 }
+
+/* -----Clients section----- */
+
+.client-list {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  gap: 30px;
+}
+.client-box {
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-grey);
+  border-radius: 4px;
+}
+.icon-client {
+  width: 170px;
+  height: 92px;
+  fill: var(--icon-grey);
+}
+.client-box:hover,
+.client-box:focus {
+  border-color: var(--brand-blue);
+}
+.icon-client:hover,
+.icon-client:focus {
+  fill: var(--brand-blue);
+}
 /* -----------------PORTFOLIO------------- */
 .filter {
   display: flex;

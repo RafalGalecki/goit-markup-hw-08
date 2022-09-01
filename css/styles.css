@@ -83,7 +83,7 @@ body {
 }
 .navi-link {
   position: relative;
-  color: var(--band-black);
+  color: var(--brand-black);
   text-decoration: none;
 }
 .navi-list {
@@ -95,6 +95,11 @@ body {
 .block {
   display: block;
   margin: 0;
+}
+.link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link:hover,
 .link:focus {
@@ -141,6 +146,9 @@ body {
   margin-right: 10px;
   width: 16px;
   height: 16px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-icon:hover,
 .contacts-icon:focus {
@@ -152,9 +160,6 @@ body {
 }
 
 /*----Footer-----*/
-.container-block {
-  display: block;
-}
 
 .background-dark {
   background-color: var(--brand-dark);
@@ -357,6 +362,9 @@ body {
   height: 44px;
   border: none;
   border-radius: 50%;
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-social-card {
   fill: var(--icon-grey);
@@ -390,11 +398,17 @@ body {
   height: 92px;
   border: 1px solid var(--icon-grey);
   border-radius: 4px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-client {
   width: 170px;
   height: 92px;
   fill: var(--icon-grey);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-box:hover,
 .client-box:focus {
@@ -422,6 +436,9 @@ body {
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -442,6 +459,9 @@ body {
 .grid-item {
   background-color: var(--white);
   cursor: pointer;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .grid-item-description {
   border-bottom: 1px solid var(--grid-item);

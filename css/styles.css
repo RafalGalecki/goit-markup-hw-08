@@ -20,6 +20,7 @@
   --background-title: #2f303a66;
   --icon-grey: #afb1b8;
   --icon-black: #ffffff1a;
+  --background-dark-trans: #2f303acc;
 }
 body {
   font-family: "Roboto", "Raleway", sans-serif;
@@ -273,7 +274,23 @@ body {
   height: 100%;
   gap: 30px;
 }
-
+.thumb {
+  position: relative;
+}
+.label {
+  padding: 27px 0;
+  color: var(--white);
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--background-dark-trans);
+  margin: 0;
+}
+.thumb > .label {
+  position: absolute;
+  bottom: 3px;
+  right: 0;
+  left: 0;
+}
 /* -----Team section---- */
 .team-section {
   background-color: var(--background-grey);

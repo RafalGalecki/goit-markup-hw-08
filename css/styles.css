@@ -82,6 +82,7 @@ body {
   margin-right: 345px;
 }
 .navi-link {
+  position: relative;
   color: var(--band-black);
   text-decoration: none;
 }
@@ -102,6 +103,24 @@ body {
 .link-active {
   color: var(--brand-blue);
 }
+/* --blue underline hover ---- */
+.navi-link::after {
+  content: "";
+  position: absolute;
+  display: none;
+  height: 4px;
+  bottom: -33px;
+  left: 0;
+  right: 0;
+  background-color: var(--brand-blue);
+  border-radius: 2px;
+  margin: 0;
+}
+.navi-link:hover::after,
+.navi-link:focus::after {
+  display: block;
+}
+/* --- */
 .list-head {
   display: flex;
   justify-content: center;

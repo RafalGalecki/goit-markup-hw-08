@@ -86,9 +86,9 @@ body {
   margin-right: 345px;
 }
 .navi-link {
-  position: relative;
   color: var(--brand-black);
   text-decoration: none;
+  font-weight: 500;
 }
 .navi-list {
   display: flex;
@@ -109,14 +109,15 @@ body {
 .link:focus {
   color: var(--brand-blue);
 }
+/* --blue underline for active page ---- */
 .link-active {
+  position: relative;
   color: var(--brand-blue);
 }
-/* --blue underline hover ---- */
-.navi-link::after {
+.link-active::after {
   content: "";
   position: absolute;
-  display: none;
+  display: block;
   height: 4px;
   bottom: -33px;
   left: 0;
@@ -125,10 +126,7 @@ body {
   border-radius: 2px;
   margin: 0;
 }
-.navi-link:hover::after,
-.navi-link:focus::after {
-  display: block;
-}
+
 /* --- */
 .list-head {
   display: flex;
@@ -563,5 +561,42 @@ border-radius: 4px;
 .icon-close {
   width: 20px;
   height: 20px;
+}
+
+/* --animation of modal window */
+.anime {
+  animation-name: rotate;
+  animation-duration: 1200ms;
+  animation-direction: normal;
+  animation-delay: 700ms;
+  ;
+}
   
+@keyframes rotate {
+    0% {
+      rotate: 0deg;
+    }
+  
+    100% {
+      rotate: 360deg;
+    }
+  }
+.close-button:active {
+  animation-name: scale;
+  animation-duration: 3000ms;
+  animation-delay: 1500ms;
+}
+@keyframes scale {
+  0% {
+    scale: 1;
+    background-color: red;
+  }
+50% {
+  scale: 8;
+  background-color: #2196f3;
+}
+  100% {
+    scale: 1;
+    background-color: green;
+  }
 }

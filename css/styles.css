@@ -22,9 +22,8 @@
   --icon-black: #ffffff1a;
   --background-dark-trans: #2f303acc;
   --background-blue-trans: #2196f3e5;
-  --border-grey: #0000001A;
+  --border-grey: #0000001a;
   --background-backdrop: #00000033;
-
 }
 body {
   font-family: "Roboto", "Raleway", sans-serif;
@@ -530,6 +529,7 @@ body {
   top: 0;
   left: 0;
   background-color: var(--background-backdrop);
+  transition: opacity 250ms easy, visibility 250ms easy;
 }
 .modal {
   position: absolute;
@@ -539,8 +539,12 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--white);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.anime {
+  transition-duration: 1500ms;
 }
 .close-button {
   position: absolute;
@@ -557,46 +561,9 @@ border-radius: 4px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transition: opacity 250ms easy, visibility 250ms easy;
 }
 .icon-close {
   width: 20px;
   height: 20px;
-}
-
-/* --animation of modal window */
-.anime {
-  animation-name: rotate;
-  animation-duration: 1200ms;
-  animation-direction: normal;
-  animation-delay: 700ms;
-  ;
-}
-  
-@keyframes rotate {
-    0% {
-      rotate: 0deg;
-    }
-  
-    100% {
-      rotate: 360deg;
-    }
-  }
-.close-button:active {
-  animation-name: scale;
-  animation-duration: 3000ms;
-  animation-delay: 1500ms;
-}
-@keyframes scale {
-  0% {
-    scale: 1;
-    background-color: red;
-  }
-50% {
-  scale: 8;
-  background-color: #2196f3;
-}
-  100% {
-    scale: 1;
-    background-color: green;
-  }
 }

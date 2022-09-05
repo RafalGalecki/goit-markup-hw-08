@@ -552,6 +552,21 @@
     </footer>
     <div class="backdrop is-hidden anime" data-modal>
       <div class="modal">
+        <div class="order">
+          <p class="order-form-title">Zostaw swoje dane w formularzu poniżej</p>
+          <form class="order-form">
+            <label for="user_name">Imię</label>
+            <input type="name" name="user_name" id="user_name" />
+            <label for="user_phone">Telefon</label>
+            <input type="phone" name="phone" id="user_phone" />
+            <label for="user_email">Email</label>
+            <input type="email" name="email" id="user_email" />
+            <label for="user_comment">Komentarz</label>
+            <input type="comment" name="comment" id="user_comment" placeholder="Wprowadź tekst" />
+            <p class="accept-text">Oświadczam iż akceptuję <a>Regulamin</a> i <a>Politykę Prywatności</a>.</p>
+            <button class="send-button main-button" type="submit">Wyślij</button>
+          </form>
+        </div>
         <button type="button" class="close-button" data-modal-close>
           <svg class="icon icon-close">
             <use

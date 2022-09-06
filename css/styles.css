@@ -24,6 +24,8 @@
   --background-blue-trans: #2196f3e5;
   --border-grey: #0000001a;
   --background-backdrop: #00000033;
+  --placeholder-comment: #75757580;
+
 }
 body {
   font-family: "Roboto", "Raleway", sans-serif;
@@ -208,7 +210,7 @@ body {
 }
 /* --Newsletter-- */
 .newsletter {
-margin-left: 78px;
+  margin-left: 78px;
   padding-top: 12px;
 }
 .news-flex {
@@ -221,8 +223,8 @@ margin-left: 78px;
   padding-bottom: 15px;
   background-color: var(--brand-dark);
   border: 1px solid rgba(255, 255, 255, 0.3);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
 }
 .input-text,
 ::placeholder {
@@ -290,7 +292,7 @@ border-radius: 4px;
   margin-top: 0;
 }
 .title-button {
-  padding-right:41px;
+  padding-right: 41px;
   padding-left: 42px;
   margin: 0 auto;
 }
@@ -616,7 +618,7 @@ border-radius: 4px;
   flex-direction: column;
   padding: 40px;
   margin: auto;
-align-items: center;
+  align-items: center;
 }
 .order-form {
   display: flex;
@@ -641,31 +643,55 @@ align-items: center;
   color: var(--grey);
   margin-bottom: 4px;
 }
-.order-form input::placeholder {
-  
+.order-form input ::placeholder {
+  color: #000;
 }
-.order-form input {
+.order-form input,
+.order-form textarea {
   height: 40px;
+  padding: 12px 16px;
   margin-bottom: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
+  border-radius: 4px;
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.order-form input:last-of-type {
+.order-form input:hover,
+.order-form input:focus,
+.order-form textarea:hover,
+.order-form textarea:focus {
+border-color: var(--brand-blue);
+}
+.order-form .comment {
   height: 120px;
-  margin-bottom: 20px;
 }
+.comment::placeholder {
+/* font-weight: 400; */
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
 
+color: var(--placeholder-comment);
+}
 .send-button {
   margin: 0 auto;
   width: 200px;
   justify-content: center;
+}
+.check {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .check-box {
   width: 16px;
   height: 15px;
   border: 2px solid var(--brand-black);
   border-radius: 2px;
-
+  margin-right: 7px;
+  cursor: pointer;
 }
 .icon-check {
   width: 16px;
@@ -674,4 +700,7 @@ border-radius: 4px;
 .accept-text {
   line-height: 1.71;
   color: var(--grey);
+}
+.accept-link {
+  color: var(--brand-blue);
 }

@@ -643,40 +643,38 @@ body {
   color: var(--grey);
   margin-bottom: 4px;
 }
-.order-form input ::placeholder {
-  color: #000;
+.form-item {
+  position: relative;
+margin-bottom: 10px;
 }
+
 .order-form input,
 .order-form textarea {
+  width: 100%;
   height: 40px;
-  padding: 12px 16px;
-  margin-bottom: 10px;
+  padding: 12px 16px 12px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition-property: background-color, fill;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.order-form input:hover,
-.order-form input:focus,
-.order-form textarea:hover,
-.order-form textarea:focus {
-border-color: var(--brand-blue);
-}
 .order-form .comment {
   height: 120px;
+  margin-bottom: 10px;
+  padding: 12px 16px;
 }
 .comment::placeholder {
 /* font-weight: 400; */
 font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;
-
 color: var(--placeholder-comment);
 }
 .send-button {
   margin: 0 auto;
   width: 200px;
+  margin-top: 30px;
   justify-content: center;
 }
 .check {
@@ -686,6 +684,7 @@ color: var(--placeholder-comment);
   align-items: center;
 }
 .check-box {
+  position: relative;
   width: 16px;
   height: 15px;
   border: 2px solid var(--brand-black);
@@ -694,13 +693,47 @@ color: var(--placeholder-comment);
   cursor: pointer;
 }
 .icon-check {
+  position: absolute;
   width: 16px;
   height: 15px;
+  top: -2px;
+  left: -2px;
+  fill: var(--white);
+  background-color: var(--brand-blue);
+  border-radius: 2px;
+}
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.icon-check:active {
+  opacity: 1;
+  visibility: visible;
 }
 .accept-text {
   line-height: 1.71;
   color: var(--grey);
+  margin: 0;
 }
 .accept-link {
   color: var(--brand-blue);
+}
+.icon-form {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  fill: var(--brand-black);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-item:hover .icon-form,
+.form-item:hover .hovering,
+.form-item:focus .icon-form,
+.form-item:focus .hovering {
+border-color: var(--brand-blue);
+fill: var(--brand-blue);
 }

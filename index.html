@@ -601,21 +601,68 @@
           <p class="order-form-title">Zostaw swoje dane w formularzu poniżej</p>
           <form class="order-form">
             <label for="user_name">Imię</label>
-            <input type="name" name="user_name" id="user_name" />
+            <div class="form-item">
+              <svg class="icon-form">
+                <use
+                  xlink:href="./images/icons.svg#person"
+                  width="18"
+                  height="18"
+                ></use>
+              </svg>
+              <input
+                class="hovering"
+                type="name"
+                name="user_name"
+                id="user_name"
+              />
+            </div>
             <label for="user_phone">Telefon</label>
-            <input type="tel" name="phone" id="user_phone" />
+            <div class="form-item">
+              <svg class="icon-form">
+                <use
+                  xlink:href="./images/icons.svg#phone"
+                  width="18"
+                  height="18"
+                ></use>
+              </svg>
+              <input class="hovering" type="tel" name="phone" id="user_phone" />
+            </div>
             <label for="user_email">Email</label>
-            <input type="email" name="email" id="user_email" />
+            <div class="form-item">
+              <svg class="icon-form">
+                <use
+                  xlink:href="./images/icons.svg#email"
+                  width="18"
+                  height="18"
+                ></use>
+              </svg>
+              <input
+                class="hovering"
+                type="email"
+                name="email"
+                id="user_email"
+              />
+            </div>
             <label for="user_comment">Komentarz</label>
-            <textarea
-              class="comment"
-              type="text"
-              rows="8"
-              name="comment"
-              id="user_comment"
-              placeholder="Wprowadź tekst"></textarea>
+            <div class="form-item">
+              <textarea
+                class="comment hovering"
+                type="text"
+                rows="8"
+                name="comment"
+                id="user_comment"
+                placeholder="Wprowadź tekst"
+              ></textarea>
+            </div>
             <div class="check">
-              <div class="check-box"></div>
+              <div class="check-box"><svg class="icon-check hidden">
+                <use
+                  xlink:href="./images/icons.svg#check"
+                  width="16"
+                  height="15"
+                
+                ></use>
+              </svg></div>
               <p class="accept-text">
                 Oświadczam iż akceptuję
                 <a

@@ -572,7 +572,7 @@
           </div>
           <div class="newsletter">
             <p class="joinus-text">Zapisz się do newslettera</p>
-            <form class="news-flex">
+            <form class="news-flex" method="post" action="javascript:void(0);">
               <label for="user_email"></label>
               <input
                 class="news-input input-text"
@@ -599,7 +599,12 @@
       <div class="modal">
         <div class="order">
           <p class="order-form-title">Zostaw swoje dane w formularzu poniżej</p>
-          <form class="order-form">
+          <form
+            class="order-form"
+            method="post"
+            action="javascript:void(0);"
+            autocomplete="off"
+          >
             <label for="user_name">Imię</label>
             <div class="form-item">
               <svg class="icon-form">
@@ -651,20 +656,25 @@
                 rows="8"
                 name="comment"
                 id="user_comment"
+                novalidate
                 placeholder="Wprowadź tekst"
               ></textarea>
             </div>
+
             <div class="check">
-              <div class="check-box"><svg class="icon-check hidden">
-                <use
-                  xlink:href="./images/icons.svg#check"
-                  width="16"
-                  height="15"
-                
-                ></use>
-              </svg></div>
+              <div class="check-box">
+                <label class="check-label" name="accept" for="user_accept">
+                  <svg class="icon-check">
+                    <use
+                      xlink:href="./images/icons.svg#check"
+                      width="16"
+                      height="15"
+                    ></use></svg
+                  ><input class="custom-check hidden" type="checkbox" name="accept" id="user_accept"
+                /></label>
+              </div>
               <p class="accept-text">
-                Oświadczam iż akceptuję
+                Oświadczam, iż akceptuję
                 <a
                   class="accept-link"
                   href="./index.html"

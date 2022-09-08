@@ -224,6 +224,14 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  outline: none;
+  transition-property: fill; border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.news-input:hover,
+.news-input:focus {
+  border-color: var(--brand-blue);
 }
 .input-text,
 ::placeholder {
@@ -691,7 +699,7 @@ body {
   width: 18px;
   height: 18px;
   fill: var(--brand-black);
-  transition-property: fill;
+  transition-property: fill; border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

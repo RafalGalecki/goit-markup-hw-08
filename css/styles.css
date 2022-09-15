@@ -672,7 +672,7 @@ body {
   position: relative;
   margin-bottom: 10px;
 }
-.order__item:focus-within {
+.order__item:focus-within .order__icon {
   fill: var(--color-brand);
   border-color: var(--color-brand);
 }

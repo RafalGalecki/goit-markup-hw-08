@@ -1,0 +1,81 @@
+.icon {
+  outline: none;
+  cursor: pointer;
+}
+.icon__header--color {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  transition-property: fill;
+  transition-duration: var(--transition-dur);
+  transition-timing-function: var(--transition-timing);
+  fill: var(--color-text);
+  background-color: var(--color-main);
+}
+.icon__header--color:hover,
+.icon__header--color:focus {
+  fill: var(--color-brand);
+}
+.icon__footer {
+  width: 24px;
+  height: 24px;
+  margin-left: 24px;
+  fill: var(--color-main);
+}
+.icon__offer {
+  display: block;
+  width: 270px;
+  height: 120px;
+  border-radius: var(--border-radius-regular);
+  border-bottom: 30px;
+  fill: currentColor;
+  background-color: var(--color-background-light);
+}
+.icon__social {
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  transition-property: background-color, fill;
+  transition-duration: var(--transition-dur);
+  transition-timing-function: var(--transition-timing);
+}
+.icon__social:hover,
+.icon__social:focus {
+  outline: none;
+  fill: var(--color-main);
+  background-color: var(--color-brand);
+}
+.icon__client {
+  width: 170px;
+  height: 92px;
+  fill: var(--color-icon);
+  transition-property: fill;
+  transition-duration: var(--transition-dur);
+  transition-timing-function: var(--transition-timing);
+}
+.icon__client:hover,
+.icon__client:focus {
+  fill: var(--color-brand);
+}
+.icon__x {
+  width: 20px;
+  height: 20px;
+  transition-property: fill;
+  transition-duration: var(--transition-dur);
+  transition-timing-function: var(--transition-timing);
+}
+.icon__x:hover {
+  fill: var(--color-brand);
+}
+.icon__order {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 11px;
+  left: 12px;
+  fill: var(--color-headline);
+  transition-property: fill, border-color;
+  transition-duration: var(--transition-dur);
+  transition-timing-function: var(--transition-timing);
+}

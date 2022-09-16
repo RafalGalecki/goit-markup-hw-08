@@ -1,0 +1,23 @@
+$colors: (
+  "main": #fff,
+  "logo": #000,
+  "headline": #212121,
+  "text": #757575,
+  "brand": #2196f3,
+  "footer-contacts": #ffffff99,
+  "background-light": #f5f4fa,
+  "header-border": #ececec,
+  "grid-border": #eeeeee,
+  "footer": #2f303a,
+  "background-image": #2f303a66,
+  "icon": #afb1b8,
+  "icon-dark": #ffffff1a,
+  "offer-label": #2f303acc,
+  "overlay": #2196f3e5,
+  "backdrop": #00000033,
+  "comment-placeholder": #75757580,
+  "modal-close": #0000001a,
+);
+@function getColor($key) {
+  @return map-get($colors, $key);
+}

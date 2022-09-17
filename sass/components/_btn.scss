@@ -6,8 +6,9 @@
   line-height: 1.87;
   letter-spacing: var(--letter-spacing-btn);
   text-align: center;
-  cursor: pointer;
-  outline: none;
+  @include cursorOutline;
+  // cursor: pointer;
+  // outline: none;
   border: none;
   border-radius: var(--border-radius-regular);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -15,9 +16,10 @@
   background-color: var(--color-brand);
 }
 .btn__footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(row);
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   margin-left: 12px;
   padding-left: 42px;
   padding-right: 28px;
@@ -26,6 +28,12 @@
   margin: 0 auto;
   padding-right: 41px;
   padding-left: 42px;
+}
+.btn__modal {
+  justify-content: center;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 .btn__filter {
   padding: 6px 22px;
@@ -36,17 +44,18 @@
   cursor: pointer;
   border: none;
   border-radius: var(--border-radius-regular);
-  transition-property: background-color, color, box-shadow;
-  transition-duration: var(--transition-dur);
-  transition-timing-function: var(--transition-timing);
+  @include trans(all);
+  // transition-property: background-color, color, box-shadow;
+  // transition-duration: var(--transition-dur);
+  // transition-timing-function: var(--transition-timing);
   background-color: var(--color-background-light);
-}
-.btn__filter:hover,
-.btn__filter:focus {
-  color: var(--color-main);
-  background-color: var(--color-brand);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  &:hover,
+  &:focus {
+    color: var(--color-main);
+    background-color: var(--color-brand);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 .btn__close {
   position: absolute;
@@ -58,24 +67,19 @@
   border-style: solid;
   border-color: var(--color-modal-close);
   border-radius: 50%;
-  cursor: pointer;
-  outline: none;
-  transition-property: border-color;
-  transition-duration: var(--transition-dur);
-  transition-timing-function: var(--transition-timing);
+  @include cursorOutline;
+  // cursor: pointer;
+  // outline: none;
+  @include trans(border-color);
+  // transition-property: border-color;
+  // transition-duration: var(--transition-dur);
+  // transition-timing-function: var(--transition-timing);
   background-color: var(--color-main);
-}
-.btn__close:hover {
-  fill: var(--color-brand);
-  border-color: var(--color-brand);
-}
-.btn__close:focus-within {
-  fill: var(--color-brand);
-  border-color: var(--color-brand);
-}
-.btn__modal {
-  justify-content: center;
-  width: 200px;
-  margin: 0 auto;
-  margin-top: 30px;
+
+  &:hover,
+  &:focus-within {
+    @include fillBorder;
+    // fill: var(--color-brand);
+    // border-color: var(--color-brand);
+  }
 }

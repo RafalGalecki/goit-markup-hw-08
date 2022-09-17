@@ -28,3 +28,16 @@
   margin: 0;
   padding: 0;
 }
+@mixin navAfter {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 4px;
+  left: 0;
+  right: 0;
+  border-radius: 2px;
+  background-color: getColor("brand");
+}
+@mixin transModal {
+  transition: opacity 250ms easy, visibility 250ms easy;
+}

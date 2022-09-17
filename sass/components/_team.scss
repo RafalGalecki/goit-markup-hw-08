@@ -1,43 +1,50 @@
+@import "../utils/mixins";
+@import "../utils/fonts";
+@import "../utils/colors";
+@import "../utils/variables";
 .team {
-  background-color: var(--color-background-light);
-}
-.team__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 100%;
-  gap: var(--gap-grid);
-}
-.team__card {
-  margin: 0;
-  padding: 0;
-  flex-basis: calc((100% - 30px * 3) / 4);
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  background-color: var(--color-main);
-}
-.team__person {
-  display: flex;
-  flex-direction: column;
-  padding: 30px 32px;
-}
-.team__name {
-  margin: 0;
-  padding-bottom: 10px;
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-primary);
-  line-height: var(--line-height-regular);
-  text-align: center;
-}
-.team__position {
-  margin: bottom 16px;
-  font-size: var(--font-size-primary);
-  line-height: var(--line-height-regular);
-  text-align: center;
-  color: var(--color-text);
-}
-.team__social--color {
-  fill: var(--color-icon);
-  background-color: var(--color-main);
+  background-color: getColor("background-light");
+
+  &__list {
+    @include flex(row);
+    @include gapWrap;
+    // display: flex;
+    // justify-content: center;
+    // flex-wrap: wrap;
+    // gap: var(--gap-grid);
+    max-width: 100%;
+  }
+  &__card {
+    margin: 0;
+    padding: 0;
+    flex-basis: calc((100% - 30px * 3) / 4);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: getColor("main");
+  }
+  &__person {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 32px;
+  }
+  &__name {
+    @include marPadZero;
+    font-weight: getFontWeight("medium");
+    font-size: getFontSize("primary");
+    line-height: $line-height-regular;
+    text-align: center;
+  }
+  &__position {
+    margin-top: 10px;
+    margin-bottom: 16px;
+    font-size: getFontSize("primary");
+    line-height: $line-height-regular;
+    text-align: center;
+    color: getColor("text");
+  }
+  &__social--color {
+    fill: getColor("icon");
+    background-color: getColor("main");
+  }
 }

@@ -1,3 +1,7 @@
+@import "../utils/mixins";
+@import "../utils/fonts";
+@import "../utils/colors";
+@import "../utils/variables";
 .header {
   display: flex;
   justify-content: space-between;
@@ -5,68 +9,52 @@
   padding-top: 24px;
   padding-bottom: 25px;
   line-height: 1.14;
-  letter-spacing: var(--letter-spacing-header);
-  border-bottom: 1px solid var(--color-header-border);
-  background-color: var(--color-main);
-}
-
-.header__logo {
-  margin-right: 93px;
-}
-.header__logo--color {
-  color: var(--color-logo);
+  letter-spacing: getLetterSpacing("header");
+  border-bottom: 1px solid getColor("header-border");
+  background-color: getColor("main");
+  &__logo {
+    margin-right: 93px;
+  }
+  &__logo--color {
+    color: getColor("logo");
+  }
 }
 .header__nav {
   display: flex;
   margin-right: 345px;
   gap: 46px;
-}
-.header__nav--color {
-  position: relative;
-  font-weight: var(--font-weight-medium);
-  text-decoration: none;
-  color: var(--color-headline);
+  &--color {
+    position: relative;
+    font-weight: getFontWeight("medium");
+    text-decoration: none;
+    color: getColor("headline");
+    &:hover::after {
+      @include navAfter;
+      bottom: -29px;
+      transform: translateY(100%);
+    }
+  }
 }
 
-/* --blue underline for active page ---- */
 .header__nav--active {
   position: relative;
-  color: var(--color-brand);
-}
-.header__nav--active::after {
-  position: absolute;
-  display: block;
-  content: "";
-  height: 4px;
-  left: 0;
-  right: 0;
-  bottom: -33px;
-  border-radius: 2px;
-  background-color: var(--color-brand);
-}
-.header__nav--color:hover::after {
-  position: absolute;
-  display: block;
-  content: "";
-  height: 4px;
-  left: 0;
-  right: 0;
-  bottom: -29px;
-  border-radius: 2px;
-  transform: translateY(100%);
-  background-color: var(--color-brand);
+  color: getColor("brand");
+  &::after {
+    @include navAfter;
+    bottom: -33px;
+  }
 }
 
-/* --- */
 .header__contacts {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: var(--gap-grid);
-}
-.header__contacts--color {
-  display: flex;
-  text-decoration: none;
-  letter-spacing: var(--letter-spacing-header);
-  color: var(--color-text);
+  @include flex(row);
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  gap: $gap-grid;
+  &--color {
+    display: flex;
+    text-decoration: none;
+    letter-spacing: getLetterSpacing("header");
+    color: getColor("text");
+  }
 }

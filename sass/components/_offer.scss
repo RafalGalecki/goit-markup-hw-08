@@ -1,52 +1,57 @@
+@import "../utils/mixins";
+@import "../utils/fonts";
+@import "../utils/colors";
+@import "../utils/variables";
 .offer {
   display: flex;
   flex-direction: column;
   gap: 94px;
-}
-.offer__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--gap-grid);
-}
-.offer__item {
-  max-width: 270px;
-  flex-basis: calc((100% - 30px * 3) / 4);
-}
-.offer__heading {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-regular);
-}
-.offer__post {
-  margin: 0;
-  line-height: 1.71;
-  color: var(--color-text);
-}
-.offer__gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  height: 100%;
-  gap: var(--gap-grid);
-}
-/* --label-- */
-.offer__thumb {
-  position: relative;
-  flex-basis: calc((100% - 30px * 2) / 3);
-}
-.offer__label {
-  position: absolute;
-  margin: 0;
-  padding: 27px 0;
-  font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-regular);
-  text-transform: uppercase;
-  text-align: center;
-  bottom: 3px;
-  right: 0;
-  left: 0;
-  color: var(--color-main);
-  background-color: var(--color-offer-label);
+
+  &__list {
+    @include gapWrap;
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    max-width: 270px;
+    flex-basis: calc((100% - 30px * 3) / 4);
+  }
+  &__heading {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: getFontWeight("bold");
+    line-height: $line-height-regular;
+  }
+  &__post {
+    margin: 0;
+    line-height: 1.71;
+    color: getColor("text");
+  }
+  &__gallery {
+    @include flex(row);
+    @include gapWrap;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    // gap: var(--gap-grid);
+    height: 100%;
+  }
+  &__thumb {
+    position: relative;
+    flex-basis: calc((100% - 30px * 2) / 3);
+  }
+  &__label {
+    position: absolute;
+    margin: 0;
+    padding: 27px 0;
+    font-weight: getFontWeight("bold");
+    line-height: $line-height-regular;
+    text-transform: uppercase;
+    text-align: center;
+    bottom: 3px;
+    right: 0;
+    left: 0;
+    color: getColor("main");
+    background-color: getColor("offer-label");
+  }
 }

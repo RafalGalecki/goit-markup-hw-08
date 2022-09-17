@@ -1,12 +1,17 @@
+@import "../utils/mixins";
+@import "../utils/fonts";
+@import "../utils/colors";
+@import "../utils/variables";
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-.section__headline {
-  margin-top: 0;
-  margin-bottom: 50px;
-  font-size: var(--font-size-section-headline);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-regular);
-  text-align: center;
+
+  &__headline {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: getFontSize("section-headline");
+    font-weight: getFontWeight("bold");
+    line-height: $line-height-regular;
+    text-align: center;
+  }
 }

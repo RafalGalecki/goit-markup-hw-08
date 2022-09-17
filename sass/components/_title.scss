@@ -1,29 +1,34 @@
+@import "../utils/mixins";
+@import "../utils/fonts";
+@import "../utils/colors";
+@import "../utils/variables";
 .title {
   display: flex;
   flex-direction: column;
   padding-top: 200px;
   padding-bottom: 200px;
-}
-.title__image {
-  width: 1600px;
-  background-image: linear-gradient(
-      var(--color-background-image),
-      var(--color-background-image)
-    ),
-    url("../images/title-background-img.jpg");
-  background-size: auto auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: var(--color-background-image);
-}
-.title__headline {
-  margin-bottom: 30px;
-  margin-top: 0;
-  font-weight: var(--font-weight-extra-bold);
-  font-size: var(--font-size-order-headline);
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: var(--letter-spacing-btn);
-  text-transform: uppercase;
-  color: var(--color-main);
+
+  &__image {
+    width: 1600px;
+    background-image: linear-gradient(
+        var(--color-background-image),
+        var(--color-background-image)
+      ),
+      url("../images/title-background-img.jpg");
+    background-size: auto auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: getColor("background-image");
+  }
+  &__headline {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: getFontWeight("extra-bold");
+    font-size: getFontSize("title-headline");
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: getLetterSpacing("btn");
+    text-transform: uppercase;
+    color: getColor("main");
+  }
 }

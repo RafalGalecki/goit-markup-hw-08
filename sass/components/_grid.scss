@@ -5,7 +5,7 @@
   gap: var(--gap-grid);
 }
 .grid__item {
-  flex-basis: calc((100% - 30 * 3) / 3);
+  flex-basis: calc((100% - 30px * 3) / 3);
   cursor: pointer;
   transition-property: box-shadow;
   transition-duration: var(--transition-dur);

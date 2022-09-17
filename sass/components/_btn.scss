@@ -1,25 +1,25 @@
+@import "../utils/mixins";
+@import "../utils/fonts";
+@import "../utils/colors";
+@import "../utils/variables";
+
 .btn {
   padding-top: 10px;
   padding-bottom: 10px;
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-primary);
+  font-weight: getFontWeight("bold");
+  font-size: getFontSize("primary");
   line-height: 1.87;
-  letter-spacing: var(--letter-spacing-btn);
+  letter-spacing: getLetterSpacing("btn");
   text-align: center;
   @include cursorOutline;
-  // cursor: pointer;
-  // outline: none;
   border: none;
-  border-radius: var(--border-radius-regular);
+  border-radius: $border-radius-regular;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: var(--color-main);
-  background-color: var(--color-brand);
+  color: getColor("main");
+  background-color: getColor("brand");
 }
 .btn__footer {
   @include flex(row);
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   margin-left: 12px;
   padding-left: 42px;
   padding-right: 28px;
@@ -37,22 +37,19 @@
 }
 .btn__filter {
   padding: 6px 22px;
-  font-size: var(--font-size-primary);
-  font-weight: var(--font-weight-medium);
+  font-size: getFontSize("primary");
+  font-weight: getFontWeight("medium");
   line-height: 1.62;
   text-align: center;
   cursor: pointer;
   border: none;
-  border-radius: var(--border-radius-regular);
+  border-radius: $border-radius-regular;
   @include trans(all);
-  // transition-property: background-color, color, box-shadow;
-  // transition-duration: var(--transition-dur);
-  // transition-timing-function: var(--transition-timing);
-  background-color: var(--color-background-light);
+  background-color: getColor("background-light");
   &:hover,
   &:focus {
-    color: var(--color-main);
-    background-color: var(--color-brand);
+    color: getColor("main");
+    background-color: getColor("brand");
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
@@ -65,7 +62,7 @@
   right: 8px;
   border-width: 1px;
   border-style: solid;
-  border-color: var(--color-modal-close);
+  border-color: getColor("modal-close");
   border-radius: 50%;
   @include cursorOutline;
   // cursor: pointer;
@@ -74,7 +71,7 @@
   // transition-property: border-color;
   // transition-duration: var(--transition-dur);
   // transition-timing-function: var(--transition-timing);
-  background-color: var(--color-main);
+  background-color: getColor("main");
 
   &:hover,
   &:focus-within {

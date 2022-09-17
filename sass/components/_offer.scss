@@ -11,7 +11,7 @@
 }
 .offer__item {
   max-width: 270px;
-  flex-basis: calc((100% - 30 * 3) / 4);
+  flex-basis: calc((100% - 30px * 3) / 4);
 }
 .offer__heading {
   margin-top: 30px;
@@ -34,7 +34,7 @@
 /* --label-- */
 .offer__thumb {
   position: relative;
-  flex-basis: calc((100% - 30 * 2) / 3);
+  flex-basis: calc((100% - 30px * 2) / 3);
 }
 .offer__label {
   position: absolute;

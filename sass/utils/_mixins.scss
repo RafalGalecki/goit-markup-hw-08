@@ -1,7 +1,10 @@
+@import "./colors";
+@import "./variables";
+
 @mixin trans($property) {
   transition-property: $property;
-  transition-duration: var(--transition-dur);
-  transition-timing-function: var(--transition-timing);
+  transition-duration: $transition-dur;
+  transition-timing-function: $transition-timing;
 }
 @mixin flex($direction) {
   display: flex;
@@ -11,15 +14,15 @@
 }
 @mixin gapWrap {
   flex-wrap: wrap;
-  gap: var(--gap-grid);
+  gap: $gap-grid;
 }
 @mixin cursorOutline {
   cursor: pointer;
   outline: none;
 }
 @mixin fillBorder {
-  fill: var(--color-brand);
-  border-color: var(--color-brand);
+  fill: getColor("brand");
+  border-color: getColor("brand");
 }
 @mixin marPadZero {
   margin: 0;

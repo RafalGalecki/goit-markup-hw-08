@@ -1,24 +1,32 @@
+@import "../utils/mixins";
+@import "../utils/fonts";
+@import "../utils/colors";
+@import "../utils/variables";
 .client {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 100%;
-  gap: var(--gap-grid);
+  @include flex(row);
+  @include gapWrap;
+  // display: flex;
+  // justify-content: center;
+  // max-width: 100%;
+  // flex-wrap: wrap;
+  // gap: var(--gap-grid);
 }
 .client__item {
   display: flex;
-  flex-basis: calc((100% - 30 * 5) / 6);
   justify-content: center;
+  flex-basis: calc((100% - 30px * 5) / 6);
   width: 170px;
   height: 92px;
-  border: 1px solid var(--color-icon);
-  border-radius: var(--border-radius-regular);
-  transition-property: border-color;
-  transition-duration: var(--transition-dur);
-  transition-timing-function: var(--transition-timing);
-}
-.client__item:hover,
-.client__item:focus {
-  outline: none;
-  border-color: var(--color-brand);
+  border: 1px solid getColor("color-icon");
+  border-radius: $border-radius-regular;
+  @include trans(border-color);
+  // transition-property: border-color;
+  // transition-duration: var(--transition-dur);
+  // transition-timing-function: var(--transition-timing);
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: var(--color-brand);
+  }
 }

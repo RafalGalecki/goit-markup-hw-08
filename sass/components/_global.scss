@@ -24,13 +24,13 @@ body {
   color: getColor("brand");
 }
 .list {
-  display: inline;
   @include marPadZero;
+  display: inline;
   list-style-type: none;
 }
 .link {
-  outline: none;
   @include trans(color);
+  outline: none;
 
   &:hover,
   &:focus {
@@ -43,8 +43,10 @@ body {
 }
 .filter {
   @include flex(row);
-  // display: flex;
-  // justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
+}
+.social {
+  display: flex;
+  gap: 10px;
 }

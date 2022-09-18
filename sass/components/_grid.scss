@@ -5,11 +5,9 @@
 .grid {
   @include flex(row);
   @include gapWrap;
-  // display: flex;
-  // justify-content: center;
-  // flex-wrap: wrap;
-  // gap: var(--gap-grid);
+ 
   &__overlay {
+    @include trans(transform);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -17,10 +15,6 @@
     padding: 49px 45px 49px 24px;
     font-size: getFontSize("product");
     line-height: 1.55;
-    @include trans(transform);
-    // transition: transform;
-    // transition-duration: var(--transition-dur);
-    // transition-timing-function: var(--transition-timing);
     top: 0;
     left: 0;
     transform: translatey(100%);
@@ -29,12 +23,9 @@
   }
 }
 .grid__item {
+  @include trans(box-shadow);
   flex-basis: calc((100% - 30px * 3) / 3);
   cursor: pointer;
-  @include trans(box-shadow);
-  // transition-property: box-shadow;
-  // transition-duration: var(--transition-dur);
-  // transition-timing-function: var(--transition-timing);
   background-color: getColor("main");
   &:hover,
   &:focus {

@@ -11,8 +11,8 @@
   &__image {
     width: 1600px;
     background-image: linear-gradient(
-        var(--color-background-image),
-        var(--color-background-image)
+        getColor("background-image"),
+        getColor("background-image")
       ),
       url("../images/title-background-img.jpg");
     background-size: auto auto;

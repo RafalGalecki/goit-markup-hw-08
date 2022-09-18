@@ -28,7 +28,8 @@
     font-weight: getFontWeight("medium");
     text-decoration: none;
     color: getColor("headline");
-    &:hover::after {
+    &:hover::after,
+    &:focus::after {
       @include navAfter;
       bottom: -29px;
       transform: translateY(100%);
@@ -47,9 +48,6 @@
 
 .header__contacts {
   @include flex(row);
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   gap: $gap-grid;
   &--color {
     display: flex;

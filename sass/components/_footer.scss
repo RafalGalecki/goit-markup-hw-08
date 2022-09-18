@@ -52,6 +52,7 @@
   }
 }
 .footer__input {
+  @include trans(all);
   width: 358px;
   padding-left: 16px;
   padding-top: 15px;
@@ -60,10 +61,6 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: $border-radius-regular;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  @include trans(all);
-  // transition-property: fill, border-color;
-  // transition-duration: var(--transition-dur);
-  // transition-timing-function: var(--transition-timing);
   background-color: getColor("footer");
 
   &:hover,

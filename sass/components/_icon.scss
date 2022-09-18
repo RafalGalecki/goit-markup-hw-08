@@ -21,27 +21,21 @@
     background-color: getColor("background-light");
   }
   &__order {
+    @include trans(all);
     position: absolute;
     width: 18px;
     height: 18px;
     top: 11px;
     left: 12px;
     fill: getColor("headline");
-    @include trans(all);
-    // transition-property: fill, border-color;
-    // transition-duration: var(--transition-dur);
-    // transition-timing-function: var(--transition-timing);
   }
 }
 
 .icon__header--color {
+  @include trans(fill);
   width: 16px;
   height: 16px;
   margin-right: 10px;
-  @include trans(fill);
-  // transition-property: fill;
-  // transition-duration: var(--transition-dur);
-  // transition-timing-function: var(--transition-timing);
   fill: getColor("text");
   background-color: getColor("main");
 
@@ -51,14 +45,11 @@
   }
 }
 .icon__social {
+  @include trans(all);
   width: 44px;
   height: 44px;
   border: none;
   border-radius: 50%;
-  @include trans(all);
-  // transition-property: background-color, fill;
-  // transition-duration: var(--transition-dur);
-  // transition-timing-function: var(--transition-timing);
 
   &:hover,
   &:focus {
@@ -68,10 +59,10 @@
   }
 }
 .icon__client {
+  @include trans(fill);
   width: 170px;
   height: 92px;
   fill: getColor("icon");
-  @include trans(fill);
 
   &:hover,
   &:focus {
@@ -79,9 +70,9 @@
   }
 }
 .icon__x {
+  @include trans(fill);
   width: 20px;
   height: 20px;
-  @include trans(fill);
 
   &:hover {
     fill: getColor("brand");

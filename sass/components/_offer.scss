@@ -30,10 +30,6 @@
   &__gallery {
     @include flex(row);
     @include gapWrap;
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: center;
-    // gap: var(--gap-grid);
     height: 100%;
   }
   &__thumb {
@@ -49,7 +45,7 @@
     text-transform: uppercase;
     text-align: center;
     bottom: 3px;
-    right: 0;
+    right: 10px;
     left: 0;
     color: getColor("main");
     background-color: getColor("offer-label");

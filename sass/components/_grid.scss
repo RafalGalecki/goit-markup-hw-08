@@ -5,7 +5,7 @@
 .grid {
   @include flex(row);
   @include gapWrap;
- 
+
   &__overlay {
     @include trans(transform);
     position: absolute;
@@ -24,7 +24,8 @@
 }
 .grid__item {
   @include trans(box-shadow);
-  flex-basis: calc((100% - 30px * 3) / 3);
+  max-width: 370px;
+  flex-basis: calc((100% - 30px * 2) / 3);
   cursor: pointer;
   background-color: getColor("main");
   &:hover,

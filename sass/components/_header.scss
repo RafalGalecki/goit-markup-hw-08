@@ -2,57 +2,78 @@
 @import "../utils/fonts";
 @import "../utils/colors";
 @import "../utils/variables";
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  line-height: 1.14;
-  letter-spacing: getLetterSpacing("header");
-  border-bottom: 1px solid getColor("header-border");
-  background-color: getColor("main");
-  &__logo {
-    margin-right: 93px;
-  }
+  padding: 16px 15px;
   &__logo--color {
     color: getColor("logo");
   }
+  &__btn {
+    margin-right: 0;
+  }
+  &__nav {
+    display: none;
+  }
+  &__contacts {
+    display: none;
+  }
 }
-.header__nav {
-  display: flex;
-  margin-right: 345px;
-  gap: 46px;
-  &--color {
-    position: relative;
-    font-weight: getFontWeight("medium");
-    text-decoration: none;
-    color: getColor("headline");
-    &:hover::after,
-    &:focus::after {
-      @include navAfter;
-      bottom: -29px;
-      transform: translateY(100%);
+@media screen and (min-width: 480px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    line-height: 1.14;
+    letter-spacing: getLetterSpacing("header");
+    border-bottom: 1px solid getColor("header-border");
+    background-color: getColor("main");
+    &__logo {
+      margin-right: 93px;
+    }
+    &__logo--color {
+      color: getColor("logo");
     }
   }
-}
-
-.header__nav--active {
-  position: relative;
-  color: getColor("brand");
-  &::after {
-    @include navAfter;
-    bottom: -33px;
-  }
-}
-
-.header__contacts {
-  @include flex(row);
-  gap: $gap-grid;
-  &--color {
+  .header__nav {
     display: flex;
-    text-decoration: none;
-    letter-spacing: getLetterSpacing("header");
-    color: getColor("text");
+    margin-right: 345px;
+    gap: 46px;
+    &--color {
+      position: relative;
+      font-weight: getFontWeight("medium");
+      text-decoration: none;
+      color: getColor("headline");
+      &:hover::after,
+      &:focus::after {
+        @include navAfter;
+        bottom: -29px;
+        transform: translateY(100%);
+      }
+    }
+  }
+
+  .header__nav--active {
+    position: relative;
+    color: getColor("brand");
+    &::after {
+      @include navAfter;
+      bottom: -33px;
+    }
+  }
+
+  .header__contacts {
+    @include flex(row);
+    gap: $gap-grid;
+    &--color {
+      display: flex;
+      text-decoration: none;
+      letter-spacing: getLetterSpacing("header");
+      color: getColor("text");
+    }
   }
 }

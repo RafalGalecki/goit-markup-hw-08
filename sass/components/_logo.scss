@@ -1,0 +1,25 @@
+@import "../utils/mixins";
+@import "../utils/fonts";
+@import "../utils/colors";
+@import "../utils/variables";
+
+.logo {
+  font-family: "Raleway";
+  font-size: getFontSize("logo-mobile");
+  font-weight: getFontWeight("bold");
+  line-height: $line-height-regular;
+  text-decoration: none;
+  outline: none;
+  color: getColor("brand");
+}
+@media (min-width: 769px) {
+  .logo {
+    font-family: "Raleway";
+    font-size: getFontSize("logo");
+    font-weight: getFontWeight("bold");
+    line-height: 1.19;
+    text-decoration: none;
+    outline: none;
+    color: getColor("brand");
+  }
+}

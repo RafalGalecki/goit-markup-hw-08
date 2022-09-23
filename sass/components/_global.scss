@@ -2,52 +2,11 @@
 @import "../utils/fonts";
 @import "../utils/colors";
 @import "../utils/variables";
+
 body {
   @include marPadZero;
   font-family: "Roboto", "Raleway", sans-serif;
   font-size: getFontSize("regular");
   letter-spacing: getLetterSpacing("regular");
   color: getColor("headline");
-}
-.container {
-  justify-content: center;
-  min-width: 320px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.logo {
-  font-family: "Raleway";
-  font-size: getFontSize("logo");
-  font-weight: getFontWeight("bold");
-  line-height: 1.19;
-  text-decoration: none;
-  outline: none;
-  color: getColor("brand");
-}
-.list {
-  @include marPadZero;
-  display: inline;
-  list-style-type: none;
-}
-.link {
-  @include trans(color);
-  outline: none;
-
-  &:hover,
-  &:focus {
-    color: getColor("brand");
-
-    .icon__header--color {
-      fill: getColor("brand");
-    }
-  }
-}
-.filter {
-  @include flex(row);
-  gap: 8px;
-  margin-bottom: 50px;
-}
-.social {
-  display: flex;
-  gap: 10px;
 }

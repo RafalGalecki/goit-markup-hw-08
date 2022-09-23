@@ -1,0 +1,7 @@
+@import "../utils/mixins";
+
+.list {
+  @include marPadZero;
+  display: inline;
+  list-style-type: none;
+}

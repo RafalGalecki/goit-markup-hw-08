@@ -1,0 +1,16 @@
+@import "../utils/mixins";
+@import "../utils/colors";
+
+.link {
+  @include trans(color);
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: getColor("brand");
+
+    .icon__header--color {
+      fill: getColor("brand");
+    }
+  }
+}

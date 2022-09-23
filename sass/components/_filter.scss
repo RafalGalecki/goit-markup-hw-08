@@ -1,0 +1,8 @@
+@import "../utils/mixins";
+
+.filter {
+  @include flex(row);
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 50px;
+}

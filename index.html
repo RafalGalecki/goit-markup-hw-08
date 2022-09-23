@@ -79,24 +79,24 @@
         </li>
       </ul>
       <button
-        class="header__btn menu-toggle mobile__open"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <svg
-          width="24"
-          height="24"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
         >
-          <path
-            fill-rule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
     </header>
     <main>
       <section class="container title title__image">
@@ -850,8 +850,8 @@
         </button>
       </div>
     </div>
-    <div class="mobile__container mobile__menu" id="mobile__menu">
-      <button class="menu-toggle mobile__close">
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
         <svg
           fill="currentColor"
           viewBox="0 0 20 20"
@@ -866,22 +866,12 @@
           ></path>
         </svg>
       </button>
-<nav class="mobile__nav">
-      <ul class="mobile__menu list">
-        <li><a href="" class="link">Agencja</a></li>
-        <li><a href="" class="link">Portfolio</a></li>
-        <li><a href="" class="link">Kontakt</a></li>
-      </ul>
-      </nav>
-      <ul class="mobile__contacts list">
-        <li><a href="" class="link">+48 111 111 111</a></li>
-        <li><a href="" class="link">info@devstudio.com</a></li>
-      </ul>
-      <ul class="mobile__social list">
-        <li><a href="" class="link">Instagram</a></li>
-        <li><a href="" class="link">Twitter</a></li>
-        <li><a href="" class="link">Facebook</a></li>
-        <li><a href="" class="link">LinkedIn</a></li>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
       </ul>
     </div>
 

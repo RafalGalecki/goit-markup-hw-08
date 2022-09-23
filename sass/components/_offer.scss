@@ -5,15 +5,17 @@
 .offer {
   display: flex;
   flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
   gap: 94px;
 
   &__list {
     @include gapWrap;
     display: flex;
-    justify-content: center;
+    // justify-content: flex-start;
   }
   &__item {
-    max-width: 270px;
+    max-width: 100%;
     flex-basis: calc((100% - 30px * 3) / 4);
   }
   &__heading {
@@ -27,26 +29,33 @@
     line-height: 1.71;
     color: getColor("text");
   }
+  &__icon-box {
+    display: flex;
+    justify-content: center;
+    max-width: 270px;
+    height: auto;
+  }
   &__gallery {
     @include flex(row);
     @include gapWrap;
-    height: 100%;
+    width: 100%;
   }
   &__thumb {
     position: relative;
+    max-width: 370px;
     flex-basis: calc((100% - 30px * 2) / 3);
   }
   &__label {
     position: absolute;
-    max-width: 370px;
+    max-width: 100%;
     margin: 0;
     padding: 27px 0;
     font-weight: getFontWeight("bold");
     line-height: $line-height-regular;
     text-transform: uppercase;
     text-align: center;
-    bottom: 3px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
     left: 0;
     color: getColor("main");
     background-color: getColor("offer-label");

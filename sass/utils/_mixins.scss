@@ -41,3 +41,6 @@
 @mixin transModal {
   transition: opacity 250ms easy, visibility 250ms easy;
 }
+@mixin flexbasis($gaps) {
+  flex-basis: calc((100% - 30px * $gaps) / ($gaps + 1));
+}

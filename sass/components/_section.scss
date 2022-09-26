@@ -4,16 +4,36 @@
 @import "../utils/variables";
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
   max-width: 1200px;
 
   &__headline {
     margin-top: 0;
-    margin-bottom: 50px;
-    font-size: getFontSize("section-headline");
+    margin-bottom: 30px;
+    font-size: getFontSize("section-headline-mob");
     font-weight: getFontWeight("bold");
     line-height: $line-height-regular;
     text-align: center;
+  }
+}
+
+// 1200px
+@media screen and (min-width: 1200px) {
+  .section {
+    margin: 0 auto;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    max-width: 1200px;
+
+    &__headline {
+      margin-top: 0;
+      margin-bottom: 50px;
+      font-size: getFontSize("section-headline");
+      font-weight: getFontWeight("bold");
+      line-height: $line-height-regular;
+      text-align: center;
+    }
   }
 }

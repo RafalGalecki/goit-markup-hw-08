@@ -20,7 +20,9 @@
     border-radius: 50%;
     outline: none;
   }
-
+// .header__hide {
+//   display: none;
+// }
   .menu-toggle:hover,
   .menu-toggle:focus {
     background-color: getColor("brand");
@@ -69,62 +71,4 @@
     display: none;
   }
 }
-}
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-}
-}
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-}
-<<<<<<< HEAD
-=======
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.mobile__container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 48px 40px 48px 40px;
-  background-color: getColor("main");
-  z-index: 999;
-
-  transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
-}
-
-.mobile__container.is-open {
-  transform: translateX(0);
-}
-
-.mobile__container .menu-toggle {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  color: getColor("headline");
-}
-
-.mobile__menu {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.mobile__menu .link {
-  display: block;
-  padding: 10px;
-  color: getColor("headline");
-  text-decoration: none;
-}
-
->>>>>>> parent of 437fd35 (Modal mobilny działa)

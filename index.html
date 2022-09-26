@@ -19,7 +19,6 @@
   </head>
   <body>
     <header class="container header">
-<<<<<<< HEAD
       <div class="header__container">
         <a
           class="logo header__logo"
@@ -102,86 +101,6 @@
           </svg>
         </button>
       </div>
-=======
-      <a
-        class="logo header__logo"
-        href="./index.html"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Web<span class="header__logo--color">Studio</span></a
-      >
-      <nav>
-        <ul class="list header__nav">
-          <li>
-            <a
-              class="header__nav--active link header__nav--color"
-              href="./index.html"
-              >Agencja</a
-            >
-          </li>
-          <li>
-            <a
-              class="link header__nav--color"
-              href="./portfolio.html"
-              target="_blank"
-              >Portfolio</a
-            >
-          </li>
-          <li>
-            <a class="link header__nav--color" href="#contacts">Kontakt</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="list header__contacts">
-        <li>
-          <a
-            class="link header__contacts--color"
-            href="mailto:info@devstudio.com"
-          >
-            <svg class="icon icon__header--color">
-              <use
-                xlink:href="./images/icons.svg#envelope"
-                width="16"
-                height="16"
-              ></use>
-            </svg>
-            info@devstudio.com
-          </a>
-        </li>
-        <li>
-          <a class="link header__contacts--color" href="tel:+48111111111">
-            <svg class="icon icon__header--color">
-              <use
-                xlink:href="./images/icons.svg#smartphone"
-                width="16"
-                height="16"
-                x="3"
-              ></use>
-            </svg>
-            +48 111 111 111</a
-          >
-        </li>
-      </ul>
-      <button
-        class="header__btn menu-toggle mobile__open"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <svg
-          width="24"
-          height="24"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
->>>>>>> parent of 437fd35 (Modal mobilny działa)
     </header>
     <main>
       <section class="container title title__image">
@@ -192,15 +111,12 @@
           Zamów usługę
         </button>
       </section>
-      <section class="section container offer">
-        <ul class="list offer__list">
+      <section class="section container offer__section">
+        <ul class="list offer">
           <li class="offer__item">
             <div class="offer__icon-box">
               <svg class="icon icon__offer">
-                <use
-                  xlink:href="./images/icons.svg#antenna"
-                  
-                ></use>
+                <use xlink:href="./images/icons.svg#antenna"></use>
               </svg>
             </div>
             <h4 class="offer__heading">LOREM IPSUM</h4>
@@ -212,10 +128,7 @@
           <li class="offer__item">
             <div class="offer__icon-box">
               <svg class="icon icon__offer">
-                <use
-                  xlink:href="./images/icons.svg#clock"
-                  
-                ></use>
+                <use xlink:href="./images/icons.svg#clock"></use>
               </svg>
             </div>
             <h4 class="offer__title">LOREM IPSUM</h4>
@@ -227,10 +140,7 @@
           <li class="offer__item">
             <div class="offer__icon-box">
               <svg class="icon icon__offer">
-                <use
-                  xlink:href="./images/icons.svg#diagram"
-                  
-                ></use>
+                <use xlink:href="./images/icons.svg#diagram"></use>
               </svg>
             </div>
             <h4 class="offer__title">LOREM IPSUM</h4>
@@ -242,10 +152,7 @@
           <li class="offer__item">
             <div class="offer__icon-box">
               <svg class="icon icon__offer">
-                <use
-                  xlink:href="./images/icons.svg#astronaut"
-                  
-                ></use>
+                <use xlink:href="./images/icons.svg#astronaut"></use>
               </svg>
             </div>
             <h4 class="offer__title">LOREM IPSUM</h4>
@@ -255,30 +162,37 @@
             </p>
           </li>
         </ul>
-
-        <div class="container">
+      </section>
+      <section class="section container">
+        <div class="">
           <h2 class="section__headline">Czym się zajmujemy</h2>
-          <ul class="list offer__gallery">
-            <li class="offer__thumb">
+          <ul class="list gallery">
+            <li class="">
+              <div class="gallery__thumb">
               <img
                 src="images/img_01.jpg"
                 alt="Ekran laptopa, tablet i dłonie na klawiaturze."
               />
-              <p class="offer__label">Aplikacje komputerowe</p>
+              </div>
+              <p class="gallery__label">Aplikacje komputerowe</p>
             </li>
-            <li class="offer__thumb">
+            <li class="">
+              <div class="gallery__thumb">
               <img
                 src="images/img_02.jpg"
                 alt="Smartfon trzymany przed ekranem komputera z obrazem ekranów smartfona."
               />
-              <p class="offer__label">Aplikacje mobilne</p>
+              </div>
+              <p class="gallery__label">Aplikacje mobilne</p>
             </li>
-            <li class="offer__thumb">
+            <li class="">
+              <div class="gallery__thumb">
               <img
                 src="images/img_03.jpg"
                 alt="Paleta kolorów na tablecie porównywana z paletą na ekranie komputera."
               />
-              <p class="offer__label">Rozwiązania graficzne</p>
+              </div>
+              <p class="gallery__label">Rozwiązania graficzne</p>
             </li>
           </ul>
         </div>
@@ -944,12 +858,12 @@
           ></path>
         </svg>
       </button>
-<nav class="mobile__nav">
-      <ul class="mobile__menu list">
-        <li><a href="" class="link">Agencja</a></li>
-        <li><a href="" class="link">Portfolio</a></li>
-        <li><a href="" class="link">Kontakt</a></li>
-      </ul>
+      <nav class="mobile__nav">
+        <ul class="mobile__menu list">
+          <li><a href="" class="link">Agencja</a></li>
+          <li><a href="" class="link">Portfolio</a></li>
+          <li><a href="" class="link">Kontakt</a></li>
+        </ul>
       </nav>
       <ul class="mobile__contacts list">
         <li><a href="" class="link">+48 111 111 111</a></li>

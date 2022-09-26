@@ -62,8 +62,6 @@
 }
 .icon__client {
   @include trans(fill);
-  width: 170px;
-  height: 92px;
   fill: getColor("icon");
 
   &:hover,

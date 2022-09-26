@@ -3,15 +3,18 @@
 @import "../utils/colors";
 @import "../utils/variables";
 .client {
-  @include flex(row);
   @include gapWrap;
+  display: flex;
+  gap: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .client__item {
+  @include flexbasis(1);
   @include trans(all);
   display: flex;
   justify-content: center;
-  flex-basis: calc((100% - 30px * 5) / 6);
-  width: 170px;
+  width: 100%;
   height: 92px;
   border: 1px solid getColor("icon");
   border-radius: $border-radius-regular;
@@ -21,5 +24,24 @@
     outline: none;
     fill: getColor("brand");
     border-color: getColor("brand");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .client {
+    &__item {
+      @include flexbasis(2);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client {
+    padding-left: 0;
+    padding-right: 0;
+    &__item {
+      @include flexbasis(5);
+      max-width: 170px;
+    }
   }
 }

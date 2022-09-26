@@ -69,6 +69,9 @@
 
 @media screen and (min-width: 1200px) {
   .team {
+    padding-left: 0;
+    padding-right: 0;
+
     &__card {
       @include flexbasis(3);
       max-width: 270px; //

@@ -4,7 +4,6 @@
 @import "../utils/variables";
 
 @media (max-width: 768px) {
-  
   .menu-toggle {
     min-height: 40px;
     min-width: 40px;
@@ -20,9 +19,7 @@
     border-radius: 50%;
     outline: none;
   }
-// .header__hide {
-//   display: none;
-// }
+
   .menu-toggle:hover,
   .menu-toggle:focus {
     background-color: getColor("brand");
@@ -71,4 +68,3 @@
     display: none;
   }
 }
-

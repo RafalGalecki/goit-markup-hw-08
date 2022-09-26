@@ -5,6 +5,8 @@
 
 .team {
   background-color: getColor("background-light");
+  padding-left: 15px;
+  padding-right: 15px;
 
   &__list {
     // @include flex(row);
@@ -15,8 +17,10 @@
   }
   &__card {
     @include marPadZero;
-    max-width: 270px;
-    flex-basis: calc((100% - 30px * 3) / 4);
+    // max-width: 270px;
+    // flex-basis: calc((100% - 30px * 3) / 4);
+    @include flexbasis(0);
+    max-width: 460px; //
     border-radius: 0px 0px 4px 4px;
     box-shadow: $box-shad-team;
     background-color: getColor("main");
@@ -24,7 +28,9 @@
   &__img-box {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
+    height: auto;
   }
   &__person {
     display: flex;
@@ -49,5 +55,23 @@
   &__social--color {
     fill: getColor("icon");
     background-color: getColor("main");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    &__card {
+      @include flexbasis(1);
+      max-width: 354px; //
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    &__card {
+      @include flexbasis(3);
+      max-width: 270px; //
+    }
   }
 }

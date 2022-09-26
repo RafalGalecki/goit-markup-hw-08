@@ -3,23 +3,20 @@
 @import "../utils/colors";
 @import "../utils/variables";
 
-gallery {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    
-  
+.gallery {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__list {
+    @include flex(row);
+    @include gapWrap;
+  }
+
   &__thumb {
     position: relative;
-    max-width: 100%;
-    height: auto;
-    flex-basis: calc((100% - 30px * 2) / 3);
-    img {
-      display:
-      display: flex;
-    justify-content: center;
-    align-items: center;
-    }
+    @include flexbasis(2);
   }
   &__label {
     position: absolute;
@@ -29,10 +26,16 @@ gallery {
     line-height: $line-height-regular;
     text-transform: uppercase;
     text-align: center;
-    bottom: 3px;
-    right: 10px;
+    bottom: 0;
+    right: 0;
     left: 0;
     color: getColor("main");
     background-color: getColor("offer-label");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery {
+    display: flex;
   }
 }

@@ -5,6 +5,9 @@
 .grid {
   @include flex(row);
   @include gapWrap;
+  gap: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   &__overlay {
     @include trans(transform);
@@ -21,11 +24,20 @@
     color: getColor("main");
     background-color: getColor("overlay");
   }
+  &__img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 }
+
 .grid__item {
+  @include flexbasis(0);
   @include trans(box-shadow);
-  max-width: 370px;
-  flex-basis: calc((100% - 30px * 2) / 3);
+  // max-width: 370px;
+  width: 100%;
+  // flex-basis: calc((100% - 30px * 2) / 3);
   cursor: pointer;
   background-color: getColor("main");
   &:hover,
@@ -35,6 +47,22 @@
     .grid__overlay {
       display: block;
       transform: translatey(0);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    &__item {
+      @include flexbasis(1);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grid {
+    &__item {
+      @include flexbasis(2);
     }
   }
 }

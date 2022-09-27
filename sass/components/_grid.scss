@@ -3,7 +3,9 @@
 @import "../utils/colors";
 @import "../utils/variables";
 .grid {
-  @include flex(row);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   @include gapWrap;
   gap: 30px;
   padding-left: 15px;
@@ -28,16 +30,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    // width: 100%;
+    
   }
 }
 
 .grid__item {
-  @include flexbasis(0);
+  // @include flexbasis(0);
   @include trans(box-shadow);
-  // max-width: 370px;
-  width: 100%;
-  // flex-basis: calc((100% - 30px * 2) / 3);
+  max-width: 100%;
   cursor: pointer;
   background-color: getColor("main");
   &:hover,
@@ -54,7 +55,8 @@
 @media screen and (min-width: 768px) {
   .grid {
     &__item {
-      @include flexbasis(1);
+      // @include flexbasis(1);
+      
     }
   }
 }
@@ -62,7 +64,8 @@
 @media screen and (min-width: 1200px) {
   .grid {
     &__item {
-      @include flexbasis(2);
+      // @include flexbasis(2);
+      
     }
   }
 }

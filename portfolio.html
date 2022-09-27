@@ -30,15 +30,11 @@
         <nav>
           <ul class="list header__nav">
             <li>
-              <a
-                class="header__nav--active link header__nav--color"
-                href="./index.html"
-                >Agencja</a
-              >
+              <a class="link header__nav--color" href="./index.html">Agencja</a>
             </li>
             <li>
               <a
-                class="link header__nav--color"
+                class="header__nav--active link header__nav--color"
                 href="./portfolio.html"
                 target="_blank"
                 >Portfolio</a
@@ -429,5 +425,47 @@
         </div>
       </div>
     </footer>
+    <div class="mobile js-menu-container" id="mobile-menu">
+      <button class="mobile__toggle js-close-menu">
+        <svg>
+          <use
+            xlink:href="./images/icons.svg#close"
+            width="24"
+            height="24"
+          ></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="mobile__menu list">
+          <li><a class="link" href="">Agencja</a></li>
+          <li><a class="link" href="">Portfolio</a></li>
+          <li><a class="link" href="">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="mobile__block">
+        <ul class="mobile__contacts list">
+          <li>
+            <a class="link mobile__contacts-phone" href="tel:+48 111 111 111"
+              >+48 111 111 111</a
+            >
+          </li>
+          <li>
+            <a
+              class="link mobile__contacts-email"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile__social list">
+          <li><a class="link" href="">Instagram</a></li>
+          <li><a class="link mobile__social--border" href="">Twitter</a></li>
+          <li><a class="link mobile__social--border" href="">Facebook</a></li>
+          <li><a class="link mobile__social--border" href="">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

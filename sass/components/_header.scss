@@ -9,28 +9,26 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
   padding-left: 15px;
-  padding-right: 22px;
+  padding-right: 23px;
   font-weight: getFontWeight("medium");
   letter-spacing: getLetterSpacing("header");
   line-height: $line-height-regular;
   border-bottom: 1px solid getColor("header-border");
   background-color: getColor("main");
 
-  &__logo {
-    display: flex;
-    // margin-right: 93px;
-  }
+  // &__logo {
+  //   display: flex;
+  // }
   &__logo--color {
     color: getColor("logo");
   }
 
   &__hide {
     display: none;
-    flex-direction: row;
-    justify-content: center;
   }
 }
 
@@ -38,13 +36,21 @@
 
 @media screen and (min-width: 768px) {
   .header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-right: 15px;
+    &__logo {
+      margin-right: 83px;
+    }
     &__hide {
       display: flex;
+      justify-content: space-between;
     }
     &__nav {
       @include flex(row);
+      margin-right: 101px;
       gap: 60px;
-      // list-style-type: none;
+
       &--color {
         position: relative;
         text-decoration: none;
@@ -52,7 +58,7 @@
         &:hover::after,
         &:focus::after {
           @include navAfter;
-          bottom: -29px;
+          bottom: -39px;
           transform: translateY(100%);
         }
       }
@@ -62,7 +68,7 @@
       color: getColor("brand");
       &::after {
         @include navAfter;
-        bottom: -33px;
+        bottom: -43px;
       }
     }
     &__contacts {
@@ -71,70 +77,83 @@
       justify-content: flex-start;
       column-gap: 10px;
       font-size: getFontSize("order-label");
+
+      &--color {
+        display: flex;
+        text-decoration: none;
+        color: getColor("text");
+      }
     }
-    &--color {
-      display: flex;
-      text-decoration: none;
-      color: getColor("text");
+    &__icon {
+      margin-right: 8px;
+      &--short {
+        margin-right: 5px;
+      }
     }
   }
 }
 
-// // desktop style
+// desktop style
 
-// @media screen and (min-width: 1200px) {
-//   .header {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     padding-top: 24px;
-//     padding-bottom: 25px;
-//     line-height: 1.14;
-//     letter-spacing: getLetterSpacing("header");
-//     border-bottom: 1px solid getColor("header-border");
-//     background-color: getColor("main");
-//     &__logo {
-//       margin-right: 93px;
-//     }
-//     &__logo--color {
-//       color: getColor("logo");
-//     }
-//   }
-//   .header__nav {
-//     display: flex;
-//     margin-right: 345px;
-//     gap: 46px;
-//     &--color {
-//       position: relative;
-//       font-weight: getFontWeight("medium");
-//       text-decoration: none;
-//       color: getColor("headline");
-//       &:hover::after,
-//       &:focus::after {
-//         @include navAfter;
-//         bottom: -29px;
-//         transform: translateY(100%);
-//       }
-//     }
-//   }
+@media screen and (min-width: 1200px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    line-height: 1.14;
+    letter-spacing: getLetterSpacing("header");
+    border-bottom: 1px solid getColor("header-border");
+    background-color: getColor("main");
+    &__logo {
+      margin-right: 93px;
+    }
+    &__logo--color {
+      color: getColor("logo");
+    }
+  }
+  .header__nav {
+    display: flex;
+    margin-right: 345px;
+    gap: 46px;
+    &--color {
+      position: relative;
+      font-weight: getFontWeight("medium");
+      text-decoration: none;
+      color: getColor("headline");
+      &:hover::after,
+      &:focus::after {
+        @include navAfter;
+        bottom: -29px;
+        transform: translateY(100%);
+      }
+    }
+  }
 
-//   .header__nav--active {
-//     position: relative;
-//     color: getColor("brand");
-//     &::after {
-//       @include navAfter;
-//       bottom: -33px;
-//     }
-//   }
+  .header__nav--active {
+    position: relative;
+    color: getColor("brand");
+    &::after {
+      @include navAfter;
+      bottom: -33px;
+    }
+  }
 
-//   .header__contacts {
-//     @include flex(row);
-//     gap: $gap-grid;
-//     &--color {
-//       display: flex;
-//       text-decoration: none;
-//       letter-spacing: getLetterSpacing("header");
-//       color: getColor("text");
-//     }
-//   }
-// }
+  .header__contacts {
+    @include flex(row);
+    gap: $gap-grid;
+    &--color {
+      display: flex;
+      text-decoration: none;
+      letter-spacing: getLetterSpacing("header");
+      color: getColor("text");
+    }
+    &__icon {
+      margin-right: 10px;
+      &--short {
+        margin-right: 7px;
+      }
+    }
+  }
+}

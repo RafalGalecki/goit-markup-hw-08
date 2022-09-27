@@ -14,12 +14,7 @@
 }
 @media (min-width: 769px) {
   .logo {
-    font-family: "Raleway";
     font-size: getFontSize("logo");
-    font-weight: getFontWeight("bold");
     line-height: 1.19;
-    text-decoration: none;
-    outline: none;
-    color: getColor("brand");
   }
 }

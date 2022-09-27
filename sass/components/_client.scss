@@ -16,7 +16,6 @@
   @include trans(all);
   display: flex;
   justify-content: center;
-  width: 100%;
   border: 1px solid getColor("icon");
   border-radius: $border-radius-regular;
 

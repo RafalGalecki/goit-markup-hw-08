@@ -19,89 +19,87 @@
   </head>
   <body>
     <header class="container header">
-      
-        <a
-          class="logo header__logo"
-          href="./index.html"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Web<span class="header__logo--color">Studio</span></a
-        >
-        <div class="header__hide">
-          <nav>
-            <ul class="header__nav">
-              <li>
-                <a
-                  class="header__nav--active link header__nav--color"
-                  href="./index.html"
-                  >Agencja</a
-                >
-              </li>
-              <li>
-                <a
-                  class="link header__nav--color"
-                  href="./portfolio.html"
-                  target="_blank"
-                  >Portfolio</a
-                >
-              </li>
-              <li>
-                <a class="link header__nav--color" href="#contacts">Kontakt</a>
-              </li>
-            </ul>
-          </nav>
-
-          <ul class="list header__contacts">
+      <a
+        class="logo header__logo"
+        href="./index.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Web<span class="header__logo--color">Studio</span></a
+      >
+      <div class="header__hide">
+        <nav>
+          <ul class="list header__nav">
             <li>
               <a
-                class="link header__contacts--color"
-                href="mailto:info@devstudio.com"
+                class="header__nav--active link header__nav--color"
+                href="./index.html"
+                >Agencja</a
               >
-                <svg class="icon icon__header--color">
-                  <use
-                    xlink:href="./images/icons.svg#envelope"
-                    width="16"
-                    height="16"
-                  ></use>
-                </svg>
-                info@devstudio.com
-              </a>
             </li>
             <li>
-              <a class="link header__contacts--color" href="tel:+48111111111">
-                <svg class="icon icon__header--color">
-                  <use
-                    xlink:href="./images/icons.svg#smartphone"
-                    width="16"
-                    height="16"
-                    x="3"
-                  ></use>
-                </svg>
-                +48 111 111 111</a
+              <a
+                class="link header__nav--color"
+                href="./portfolio.html"
+                target="_blank"
+                >Portfolio</a
               >
             </li>
+            <li>
+              <a class="link header__nav--color" href="#contacts">Kontakt</a>
+            </li>
           </ul>
-        </div>
-        <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
+        </nav>
+
+        <ul class="list header__contacts">
+          <li>
+            <a
+              class="link header__contacts--color"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="icon icon__header--color">
+                <use
+                  xlink:href="./images/icons.svg#envelope"
+                  width="16"
+                  height="16"
+                ></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li>
+            <a class="link header__contacts--color" href="tel:+48111111111">
+              <svg class="icon icon__header--color">
+                <use
+                  xlink:href="./images/icons.svg#smartphone"
+                  width="16"
+                  height="16"
+                  x="3"
+                ></use>
+              </svg>
+              +48 111 111 111</a
+            >
+          </li>
+        </ul>
+      </div>
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
-    
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
     </header>
     <main>
       <section class="container title title__image">
@@ -197,7 +195,7 @@
         <div class="section container team">
           <h2 class="section__headline">Nasz zespół</h2>
           <ul class="list team__list">
-            <li>
+            <li class="team__item">
               <figure class="team__card">
                 <div class="team__img-box">
                   <img
@@ -273,7 +271,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="team__item">
               <figure class="team__card">
                 <div class="team__img-box">
                   <img
@@ -349,7 +347,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="team__item">
               <figure class="team__card">
                 <div class="team__img-box">
                   <img
@@ -425,7 +423,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="team__item">
               <figure class="team__card">
                 <div class="team__img-box">
                   <img
@@ -507,72 +505,72 @@
       <section class="section container">
         <h2 class="section__headline">Nasi klienci</h2>
         <ul class="list client">
-          <li>
+          <li class="client__item">
             <a
               href="./index.html"
               target="_blank"
               rel="noopener noreferrer"
-              class="client__item icon__client"
+              class="icon__client"
             >
               <svg class="icon">
                 <use xlink:href="./images/icons.svg#client-01"></use>
               </svg>
             </a>
           </li>
-          <li>
+          <li class="client__item">
             <a
               href="./index.html"
               target="_blank"
               rel="noopener noreferrer"
-              class="client__item icon__client"
+              class="icon__client"
             >
               <svg class="icon">
                 <use xlink:href="./images/icons.svg#client-02"></use>
               </svg>
             </a>
           </li>
-          <li>
+          <li class="client__item">
             <a
               href="./index.html"
               target="_blank"
               rel="noopener noreferrer"
-              class="client__item icon__client"
+              class="icon__client"
             >
               <svg class="icon">
                 <use xlink:href="./images/icons.svg#client-03"></use>
               </svg>
             </a>
           </li>
-          <li>
+          <li class="client__item">
             <a
               href="./index.html"
               target="_blank"
               rel="noopener noreferrer"
-              class="client__item icon__client"
+              class="icon__client"
             >
               <svg class="icon">
                 <use xlink:href="./images/icons.svg#client-04"></use>
               </svg>
             </a>
           </li>
-          <li>
+          <li class="client__item">
             <a
               href="./index.html"
               target="_blank"
               rel="noopener noreferrer"
-              class="client__item icon__client"
+              class="icon__client"
             >
               <svg class="icon">
                 <use xlink:href="./images/icons.svg#client-05"></use>
               </svg>
             </a>
           </li>
-          <li>
+          <li class="client__item">
             <a
               href="./index.html"
               target="_blank"
               rel="noopener noreferrer"
-              class="client__item icon__client"
+              class="icon__client"
             >
               <svg class="icon">
                 <use xlink:href="./images/icons.svg#client-06"></use>

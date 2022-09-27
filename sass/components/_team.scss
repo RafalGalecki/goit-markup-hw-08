@@ -12,17 +12,19 @@
   }
 
   &__list {
-    // @include flex(row);
+    @include flex(row);
     @include gapWrap;
     display: flex;
     justify-content: space-between;
     max-width: 100%;
   }
+  &__item {
+    @include flexbasis(0);
+  }
   &__card {
     @include marPadZero;
     // max-width: 270px;
     // flex-basis: calc((100% - 30px * 3) / 4);
-    @include flexbasis(0);
     max-width: 460px; //
     border-radius: 0px 0px 4px 4px;
     box-shadow: $box-shad-team;
@@ -63,8 +65,10 @@
 
 @media screen and (min-width: 768px) {
   .team {
-    &__card {
+    &__item {
       @include flexbasis(1);
+    }
+    &__card {
       max-width: 354px; //
     }
   }
@@ -75,8 +79,10 @@
     padding-left: 0;
     padding-right: 0;
 
-    &__card {
+    &__item {
       @include flexbasis(3);
+    }
+    &__card {
       max-width: 270px; //
     }
   }

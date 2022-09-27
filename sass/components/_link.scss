@@ -4,6 +4,7 @@
 .link {
   @include trans(color);
   outline: none;
+  text-decoration: none;
 
   &:hover,
   &:focus {

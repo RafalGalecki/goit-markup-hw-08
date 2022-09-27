@@ -1,14 +1,17 @@
 $font-sizes: (
   "regular": 14px,
   "primary": 16px,
-  "logo-mobile": 24px,
-  "logo": 26px,
-  "title-headline": 44px,
-  "section-headline": 36px,
-  "section-headline-mob": 28px,
+// the rest
+  "order-label": 12px,
   "product": 18px,
   "order-heading": 20px,
-  "order-label": 12px,
+  "logo-mobile": 24px,
+  "logo": 26px,
+  "section-headline-mob": 28px,
+  "mobile-phone": 34px,
+  "section-headline": 36px,
+  "mobile-nav": 40px,
+  "title-headline": 44px,
 );
 @function getFontSize($key) {
   @return map-get($font-sizes, $key);

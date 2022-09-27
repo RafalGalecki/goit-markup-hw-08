@@ -6,6 +6,7 @@
 // mobile style
 
 .header {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -29,6 +30,12 @@
 
   &__hide {
     display: none;
+  }
+  &__mobile {
+    position: absolute;
+    top: 18px;
+    right: -260px;
+    border: 1px solid teal;
   }
 }
 
@@ -102,6 +109,8 @@
     align-items: center;
     padding-top: 24px;
     padding-bottom: 25px;
+    padding-left: 0;
+    padding-right: 0;
     line-height: 1.14;
     letter-spacing: getLetterSpacing("header");
     border-bottom: 1px solid getColor("header-border");

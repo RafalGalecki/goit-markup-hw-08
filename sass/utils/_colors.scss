@@ -17,6 +17,7 @@ $colors: (
   "backdrop": #00000033,
   "comment-placeholder": #75757580,
   "modal-close": #0000001a,
+  "mobile-border": #21212133,
 );
 @function getColor($key) {
   @return map-get($colors, $key);

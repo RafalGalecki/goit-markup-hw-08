@@ -11,13 +11,14 @@
   padding-bottom: 200px;
 
   &__image {
+    min-width: 320px;
     max-width: 1600px;
     background-image: linear-gradient(
         getColor("background-image"),
         getColor("background-image")
       ),
       url("../images/title-background-img.jpg");
-    background-size: auto auto;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: getColor("background-image");
@@ -32,5 +33,17 @@
     letter-spacing: getLetterSpacing("btn");
     text-transform: uppercase;
     color: getColor("main");
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box {
+    background-image: linear-gradient(
+        getColor("background-image"),
+        getColor("background-image")
+      ),
+      url("../images/title-background-img@2x.jpg");
   }
 }

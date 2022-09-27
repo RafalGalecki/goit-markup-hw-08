@@ -26,54 +26,75 @@
         rel="noopener noreferrer"
         >Web<span class="header__logo--color">Studio</span></a
       >
-      <nav>
-        <ul class="list header__nav">
-          <li>
-            <a class="link header__nav--color" href="./index.html">Agencja</a>
-          </li>
+      <div class="header__hide">
+        <nav>
+          <ul class="list header__nav">
+            <li>
+              <a
+                class="header__nav--active link header__nav--color"
+                href="./index.html"
+                >Agencja</a
+              >
+            </li>
+            <li>
+              <a
+                class="link header__nav--color"
+                href="./portfolio.html"
+                target="_blank"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a class="link header__nav--color" href="#contacts">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="list header__contacts">
           <li>
             <a
-              class="header__nav--active link header__nav--color"
-              href="./portfolio.html"
-              target="_blank"
-              >Portfolio</a
+              class="link header__contacts--color"
+              href="mailto:info@devstudio.com"
             >
+              <svg class="icon icon__header--color header__icon">
+                <use
+                  xlink:href="./images/icons.svg#envelope"
+                  width="16"
+                  height="16"
+                  y="-2"
+                ></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li>
-            <a class="link header__nav--color" href="#contacts">Kontakt</a>
+            <a class="link header__contacts--color" href="tel:+48111111111">
+              <svg class="icon icon__header--color header__icon--short">
+                <use
+                  xlink:href="./images/icons.svg#smartphone"
+                  width="16"
+                  height="16"
+                  x="-3"
+                ></use>
+              </svg>
+              +48 111 111 111</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="list header__contacts">
-        <li>
-          <a
-            class="link header__contacts--color"
-            href="mailto:info@devstudio.com"
-          >
-            <svg class="icon icon__header--color">
-              <use
-                xlink:href="./images/icons.svg#envelope"
-                width="16"
-                height="16"
-              ></use>
-            </svg>
-            info@devstudio.com
-          </a>
-        </li>
-        <li>
-          <a class="link header__contacts--color" href="tel:+48111111111">
-            <svg class="icon icon__header--color">
-              <use
-                xlink:href="./images/icons.svg#smartphone"
-                width="16"
-                height="16"
-                x="3"
-              ></use>
-            </svg>
-            +48 111 111 111</a
-          >
-        </li>
-      </ul>
+      </div>
+      <button
+        class="header__mobile mobile__toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg>
+          <use
+            xlink:href="./images/icons.svg#burger"
+            width="24"
+            height="24"
+          ></use>
+        </svg>
+      </button>
     </header>
     <section class="section container">
       <ul class="list filter">
@@ -97,11 +118,11 @@
         <li class="grid__item">
           <div class="product">
             <div class="grid__img-box">
-            <img
-              src="./images/portfolio-img-1.jpg"
-              alt="Laptop z otwartą zakładką 'Our People Make The Difference.'"
-             
-            />
+              <img
+                src="./images/portfolio-img-1.jpg"
+                srcset="./images/portfolio-img-1@2x.jpg 2x"
+                alt="Laptop z otwartą zakładką 'Our People Make The Difference.'"
+              />
             </div>
             <p class="grid__overlay">
               Technocrack jest popularną platformą wykorzystywaną do
@@ -118,11 +139,11 @@
         <li class="grid__item">
           <div class="product">
             <div class="grid__img-box">
-            <img
-              src="./images/portfolio-img-2.jpg"
-              alt="Dwóch koszykarzy walczy o piłkę."
-              
-            />
+              <img
+                src="./images/portfolio-img-2.jpg"
+                srcset="./images/portfolio-img-2@2x.jpg 2x"
+                alt="Dwóch koszykarzy walczy o piłkę."
+              />
             </div>
             <p class="grid__overlay">
               Technocrack jest popularną platformą wykorzystywaną do
@@ -139,11 +160,11 @@
         <li class="grid__item">
           <div class="product">
             <div class="grid__img-box">
-            <img
-              src="./images/portfolio-img-3.jpg"
-              alt="Logotyp restauracji z rybą w tle."
-              
-            />
+              <img
+                src="./images/portfolio-img-3.jpg"
+                srcset="./images/portfolio-img-3@2x.jpg 2x"
+                alt="Logotyp restauracji z rybą w tle."
+              />
             </div>
             <p class="grid__overlay">
               Technocrack jest popularną platformą wykorzystywaną do
@@ -160,10 +181,11 @@
         <li class="grid__item">
           <div class="product">
             <div class="grid__img-box">
-            <img
-              src="./images/portfolio-img-4.jpg"
-              alt="Czarne duże słuchawki."
-            />
+              <img
+                src="./images/portfolio-img-4.jpg"
+                srcset="./images/portfolio-img-4@2x.jpg 2x"
+                alt="Czarne duże słuchawki."
+              />
             </div>
             <p class="grid__overlay">
               Technocrack jest popularną platformą wykorzystywaną do
@@ -180,10 +202,11 @@
         <li class="grid__item">
           <div class="product">
             <div class="grid__img-box">
-            <img
-              src="./images/portfolio-img-5.jpg"
-              alt="Dwa pudełka, mniejsze brązowe i większe białe."
-            />
+              <img
+                src="./images/portfolio-img-5.jpg"
+                srcset="./images/portfolio-img-5@2x.jpg 2x"
+                alt="Dwa pudełka, mniejsze brązowe i większe białe."
+              />
             </div>
             <p class="grid__overlay">
               Technocrack jest popularną platformą wykorzystywaną do
@@ -200,11 +223,11 @@
         <li class="grid__item">
           <div class="product">
             <div class="grid__img-box">
-            <img
-              src="./images/portfolio-img-6.jpg"
-              alt="Ekran komputera z czarnym layoutem strony."
-             
-            />
+              <img
+                src="./images/portfolio-img-6.jpg"
+                srcset="./images/portfolio-img-6@2x.jpg 2x"
+                alt="Ekran komputera z czarnym layoutem strony."
+              />
             </div>
             <p class="grid__overlay">
               Technocrack jest popularną platformą wykorzystywaną do
@@ -221,11 +244,11 @@
         <li class="grid__item">
           <div class="product">
             <div class="grid__img-box">
-            <img
-              src="./images/portfolio-img-7.jpg"
-              alt="Otwarty magazyn ilustrowany."
-             
-            />
+              <img
+                src="./images/portfolio-img-7.jpg"
+                srcset="./images/portfolio-img-7@2x.jpg 2x"
+                alt="Otwarty magazyn ilustrowany."
+              />
             </div>
             <p class="grid__overlay">
               Technocrack jest popularną platformą wykorzystywaną do
@@ -242,11 +265,11 @@
         <li class="grid__item">
           <div class="product">
             <div class="grid__img-box">
-            <img
-              src="./images/portfolio-img-8.jpg"
-              alt="Biała, tekturowa metka 'Labeltag'."
-              
-            />
+              <img
+                src="./images/portfolio-img-8.jpg"
+                srcset="./images/portfolio-img-8@2x.jpg 2x"
+                alt="Biała, tekturowa metka 'Labeltag'."
+              />
             </div>
             <p class="grid__overlay">
               Technocrack jest popularną platformą wykorzystywaną do
@@ -263,11 +286,11 @@
         <li class="grid__item">
           <div class="product">
             <div class="grid__img-box">
-            <img
-              src="./images/portfolio-img-9.jpg"
-              alt="Dłonie na klawiaturze laptopa."
-              
-            />
+              <img
+                src="./images/portfolio-img-9.jpg"
+                srcset="./images/portfolio-img-9@2x.jpg 2x"
+                alt="Dłonie na klawiaturze laptopa."
+              />
             </div>
             <p class="grid__overlay">
               Technocrack jest popularną platformą wykorzystywaną do
@@ -285,104 +308,106 @@
     </section>
     <footer class="footer__background">
       <div class="container footer">
-        <div>
-          <a
-            class="logo"
-            href="./index.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Web<span class="footer__logo--color">Studio</span></a
-          >
-          <address class="footer__address">
-            <p>m. Warszawa, Aleje Jerozolimskie 21</p>
-          </address>
-          <ul class="list footer__contacts">
-            <li>
+        <div class="footer__tablet">
+          <div class="footer__logo-block">
+            <a
+              class="logo footer__logo"
+              href="./index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Web<span class="footer__logo--color">Studio</span></a
+            >
+            <address class="footer__address">
+              m. Warszawa, Aleje Jerozolimskie 21
+            </address>
+            <ul class="list footer__contacts">
+              <li class="footer__contacts--start">
+                <a
+                  class="link footer__contacts--color"
+                  href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li>
+                <a class="link footer__contacts--color" href="tel:+48111111111"
+                  >+48 111 111 111</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__social">
+            <h3 class="footer__heading">Dołącz do nas</h3>
+            <div class="social">
               <a
-                class="link footer__contacts--color"
-                href="mailto:info@example.com"
-                >info@example.com</a
+                class="icon icon__social footer__social--color"
+                href="./index.html"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-            </li>
-            <li>
-              <a class="link footer__contacts--color" href="tel:+48111111111"
-                >+48 111 111 111</a
+                <svg>
+                  <use
+                    xlink:href="./images/icons.svg#instagram"
+                    width="20"
+                    height="20"
+                    x="12"
+                    y="12"
+                  ></use>
+                </svg>
+              </a>
+              <a
+                class="icon icon__social footer__social--color"
+                href="./index.html"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-            </li>
-          </ul>
-        </div>
-        <div class="footer__social">
-          <h3 class="footer__heading">Dołącz do nas</h3>
-          <div class="social">
-            <a
-              class="icon icon__social footer__social--color"
-              href="./index.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg>
-                <use
-                  xlink:href="./images/icons.svg#instagram"
-                  width="20"
-                  height="20"
-                  x="12"
-                  y="12"
-                ></use>
-              </svg>
-            </a>
-            <a
-              class="icon icon__social footer__social--color"
-              href="./index.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg>
-                <use
-                  xlink:href="./images/icons.svg#twitter"
-                  width="20"
-                  height="20"
-                  x="12"
-                  y="12"
-                ></use>
-              </svg>
-            </a>
-            <a
-              class="icon icon__social footer__social--color"
-              href="./index.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg>
-                <use
-                  xlink:href="./images/icons.svg#facebook"
-                  width="20"
-                  height="20"
-                  x="12"
-                  y="12"
-                ></use>
-              </svg>
-            </a>
-            <a
-              class="icon icon__social footer__social--color"
-              href="./index.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg>
-                <use
-                  xlink:href="./images/icons.svg#linkedin"
-                  width="20"
-                  height="20"
-                  x="12"
-                  y="12"
-                ></use>
-              </svg>
-            </a>
+                <svg>
+                  <use
+                    xlink:href="./images/icons.svg#twitter"
+                    width="20"
+                    height="20"
+                    x="12"
+                    y="12"
+                  ></use>
+                </svg>
+              </a>
+              <a
+                class="icon icon__social footer__social--color"
+                href="./index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg>
+                  <use
+                    xlink:href="./images/icons.svg#facebook"
+                    width="20"
+                    height="20"
+                    x="12"
+                    y="12"
+                  ></use>
+                </svg>
+              </a>
+              <a
+                class="icon icon__social footer__social--color"
+                href="./index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg>
+                  <use
+                    xlink:href="./images/icons.svg#linkedin"
+                    width="20"
+                    height="20"
+                    x="12"
+                    y="12"
+                  ></use>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
         <div class="footer__newsletter">
           <h3 class="footer__heading">Zapisz się do newslettera</h3>
-          <form class="footer__form" method="post" action="javascript:void(0);">
+          <form class="footer__form" method="POST" action="javascript:void(0);">
             <label for="news_email"></label>
             <input
               class="footer__input"

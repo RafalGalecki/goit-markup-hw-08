@@ -91,23 +91,52 @@
   .mobile__social {
     display: flex;
     flex-direction: row;
+    align-items: center;
     font-size: getFontSize("product");
     line-height: 1.22;
+    
+    &-item {
+      display: flex;
+      align-items: center;
+    }
 
     & .link {
-      margin-right: 10px;
       color: getColor("brand");
     }
-    &--border {
-      @include trans(border-left);
-      padding-left: 10px;
-      border-left: 1px solid getColor("mobile-border");
+  }
 
-      &:hover,
-      &:focus {
-        transform: rotate(90deg);
-        transition-duration: 1s;
+  .mobile__social {
+    &--inst,
+    &--twit,
+    &--fb {
+      position: relative;
+      margin-right: 22px;
+      &::after {
+        @include socialAfter;
+        transform: rotate(0);
+        @include trans(all);
       }
+    }
+  }
+  .mobile__social {
+    &--inst::after {
+      top: 0;
+      left: 94px;
+    }
+    &--twit::after {
+      top: 0;
+      left: 70px;
+    }
+    &--fb::after {
+      top: 0;
+      left: 92px;
+    }
+  }
+  .mobile__social {
+    &--inst:hover::after,
+    &--twit:hover::after,
+    &--fb:hover::after {
+      transform: rotate(90deg);
     }
   }
 }

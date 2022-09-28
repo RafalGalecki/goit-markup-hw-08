@@ -38,6 +38,14 @@
   border-radius: 2px;
   background-color: getColor("brand");
 }
+@mixin socialAfter {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 2px;
+  height: 20px;
+  background-color: getColor("mobile-border");
+}
 @mixin transModal {
   transition: opacity 250ms easy, visibility 250ms easy;
 }

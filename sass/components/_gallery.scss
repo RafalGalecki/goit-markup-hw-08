@@ -4,10 +4,8 @@
 @import "../utils/variables";
 
 .gallery {
+  @include flex(column);
   display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
   &__list {
     @include flex(row);

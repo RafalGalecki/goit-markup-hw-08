@@ -7,8 +7,6 @@
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  // padding-top: 60px;
-  // padding-bottom: 60px;
   padding: 60px 15px;
   color: getColor("main");
 
@@ -38,16 +36,13 @@
   &__newsletter {
     display: flex;
     flex-direction: column;
-    margin: 0;
     align-items: center;
+    margin: 0;
   }
   &__form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex(column);
     width: 100%;
     margin: 0;
-    align-items: center;
   }
 }
 .footer__logo--color {
@@ -69,8 +64,7 @@
   flex-direction: column;
   margin: 0 auto;
   align-items: center;
-  // margin-left: 70px;
-  // padding-top: 12px;
+
   &--color {
     fill: getColor("main");
     background-color: getColor("icon-dark");
@@ -81,7 +75,6 @@
   width: 100%;
   height: 50px;
   margin-bottom: 20px;
-  // width: 358px;
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -144,8 +137,6 @@
     }
     &__logo {
       display: inline-block;
-      // flex-direction: row;
-      // justify-content: flex-start;
       margin-left: 0;
     }
     &__address {
@@ -164,12 +155,8 @@
       display: block;
     }
     &__form {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
+      @include flex(row);
       margin: auto auto;
-      
     }
     &__input {
       width: 358px;

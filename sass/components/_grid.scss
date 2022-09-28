@@ -7,9 +7,6 @@
   flex-direction: row;
   justify-content: center;
   @include gapWrap;
-  gap: 30px;
-  padding-left: 15px;
-  padding-right: 15px;
 
   &__overlay {
     @include trans(transform);
@@ -26,19 +23,11 @@
     color: getColor("main");
     background-color: getColor("overlay");
   }
-  // &__img-box {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   width: 100%;
-    
-  // }
 }
 
 .grid__item {
   @include flexbasis(0);
   @include trans(box-shadow);
-  // max-width: 100%;
   cursor: pointer;
   background-color: getColor("main");
   &:hover,
@@ -57,8 +46,6 @@
     justify-content: space-between;
     &__item {
       @include flexbasis(1);
-      
-      
     }
   }
 }
@@ -67,8 +54,6 @@
   .grid {
     &__item {
       @include flexbasis(2);
-      
-      
     }
   }
 }

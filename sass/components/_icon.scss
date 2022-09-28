@@ -15,13 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // width: 100%;
-    // height: 120px;
-    // border-radius: $border-radius-regular;
-    // border-bottom: 30px;
     fill: currentColor;
-    // overflow: hidden;
-    // background-color: getColor("background-light");
   }
   &__order {
     @include trans(all);
@@ -38,7 +32,7 @@
   @include trans(fill);
   width: 16px;
   height: 16px;
-  
+
   fill: getColor("text");
   background-color: getColor("main");
 
@@ -62,10 +56,8 @@
   }
 }
 .icon__client {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 92px;
+  width: 106px;
+  height: 60px;
   @include trans(fill);
   fill: getColor("icon");
 

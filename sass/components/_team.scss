@@ -4,9 +4,6 @@
 @import "../utils/variables";
 
 .team {
-  padding-left: 15px;
-  padding-right: 15px;
-
   &__background {
     background-color: getColor("background-light");
   }
@@ -14,9 +11,6 @@
   &__list {
     @include flex(row);
     @include gapWrap;
-    display: flex;
-    justify-content: space-between;
-
   }
   &__item {
     @include flexbasis(0);
@@ -63,9 +57,6 @@
 
 @media screen and (min-width: 1200px) {
   .team {
-    padding-left: 0;
-    padding-right: 0;
-
     &__item {
       @include flexbasis(3);
     }

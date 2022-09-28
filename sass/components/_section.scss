@@ -5,13 +5,11 @@
 
 .section {
   margin: 0;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  // max-width: 1200px;
+  padding: 60px 15px;
 
   &__headline {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     font-size: getFontSize("section-headline-mob");
     font-weight: getFontWeight("bold");
     line-height: $line-height-regular;
@@ -19,17 +17,23 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .section {
+    &__headline {
+      margin-bottom: 30px;
+      font-size: getFontSize("section-headline");
+    }
+  }
+}
+
 // 1200px
 @media screen and (min-width: 1200px) {
   .section {
     margin: 0 auto;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    // max-width: 1200px;
+    padding: 94px 0px;
 
     &__headline {
       margin-bottom: 50px;
-      font-size: getFontSize("section-headline");
     }
   }
 }

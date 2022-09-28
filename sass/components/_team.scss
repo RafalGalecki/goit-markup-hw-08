@@ -19,13 +19,14 @@
     max-width: 100%;
   }
   &__item {
-    // @include flexbasis(0);
+    @include flexbasis(0);
+    display: flex;
+    justify-content: center;
   }
   &__card {
     @include marPadZero;
     // max-width: 270px;
-    // flex-basis: calc((100% - 30px * 3) / 4);
-    max-width: 460px; //
+    // max-width: 460px; //
     border-radius: 0px 0px 4px 4px;
     box-shadow: $box-shad-team;
     background-color: getColor("main");
@@ -66,10 +67,10 @@
 @media screen and (min-width: 768px) {
   .team {
     &__item {
-      // @include flexbasis(1);
+      @include flexbasis(1);
     }
     &__card {
-      // max-width: 354px; //
+      
     }
   }
 }
@@ -80,7 +81,7 @@
     padding-right: 0;
 
     &__item {
-      // @include flexbasis(3);
+      @include flexbasis(3);
     }
     &__card {
       // max-width: 270px; //

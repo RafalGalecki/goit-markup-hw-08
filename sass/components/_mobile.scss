@@ -115,7 +115,10 @@
 }
 
 @media (min-width: 768px) {
-  .mobile__toggle {
+  .mobile {
     display: none;
+    &__toggle {
+      display: none;
+    }
   }
 }

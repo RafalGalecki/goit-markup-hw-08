@@ -7,14 +7,14 @@
   font-family: "Raleway";
   font-size: getFontSize("logo-mobile");
   font-weight: getFontWeight("bold");
+  letter-spacing: getLetterSpacing("regular");
   line-height: $line-height-regular;
   text-decoration: none;
   outline: none;
   color: getColor("brand");
 }
-@media (min-width: 769px) {
+@media (min-width: 1200px) {
   .logo {
     font-size: getFontSize("logo");
-    line-height: 1.19;
   }
 }

@@ -27,12 +27,13 @@
     margin-top: 0;
     margin-bottom: 30px;
     font-weight: getFontWeight("extra-bold");
-    font-size: getFontSize("title-headline");
-    line-height: 1.36;
+    font-size: getFontSize("logo");
+    line-height: 1.61;
     text-align: center;
     letter-spacing: getLetterSpacing("btn");
     text-transform: uppercase;
     color: getColor("main");
+    white-space: nowrap;
   }
 }
 
@@ -45,5 +46,14 @@
         getColor("background-image")
       ),
       url("../images/title-background-img@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    &__headline {
+      font-size: getFontSize("title-headline");
+      line-height: 1.36;
+    }
   }
 }

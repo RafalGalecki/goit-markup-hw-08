@@ -43,8 +43,8 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 21px;
+    padding-bottom: 21px;
     padding-right: 15px;
     &__logo {
       margin-right: 83px;
@@ -111,8 +111,6 @@
     padding-bottom: 25px;
     padding-left: 0;
     padding-right: 0;
-    line-height: 1.14;
-    letter-spacing: getLetterSpacing("header");
     border-bottom: 1px solid getColor("header-border");
     background-color: getColor("main");
     &__logo {
@@ -155,8 +153,7 @@
     &--color {
       display: flex;
       text-decoration: none;
-      letter-spacing: getLetterSpacing("header");
-      color: getColor("text");
+      font-size: getFontSize("regular");
     }
     &__icon {
       margin-right: 10px;

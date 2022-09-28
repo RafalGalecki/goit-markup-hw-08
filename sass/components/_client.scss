@@ -3,19 +3,20 @@
 @import "../utils/colors";
 @import "../utils/variables";
 .client {
+  @include flex(row);
   @include gapWrap;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  // justify-content: space-between;
   padding-left: 15px;
   padding-right: 15px;
-  gap: 30px;
+  // gap: 30px;
 }
 .client__item {
   @include flexbasis(1);
   @include trans(all);
-  display: flex;
-  justify-content: center;
+  // width: 100%;
+  // display: flex;
+  // justify-content: center;
   border: 1px solid getColor("icon");
   border-radius: $border-radius-regular;
 
@@ -29,6 +30,7 @@
 
 @media screen and (min-width: 768px) {
   .client {
+    justify-content: space-between;
     &__item {
       @include flexbasis(2);
     }

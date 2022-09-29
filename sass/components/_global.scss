@@ -9,6 +9,7 @@ body {
   font-size: getFontSize("regular");
   letter-spacing: getLetterSpacing("regular");
   color: getColor("headline");
+  overflow-x: hidden;
 }
 img {
   display: block;

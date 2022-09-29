@@ -34,6 +34,7 @@
 
     &--hidden {
       @include transModal;
+      display: none;
       visibility: hidden;
       opacity: 0;
       pointer-events: none;
@@ -42,20 +43,19 @@
 }
 @media screen and (min-width: 480px) {
   .modal {
-    width: 450px;
+    max-width: 450px;
     max-height: 90vh;
   }
 }
 @media screen and (min-width: 768px) {
   .modal {
-    width: 450px;
     height: 609px;
     max-height: 90vh;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
     height: 581px;
   }
 }

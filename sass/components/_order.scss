@@ -14,7 +14,7 @@
     margin-bottom: 12px;
     font-weight: getFontWeight("bold");
     font-size: getFontSize("order-heading");
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     color: getColor("headline");
   }
@@ -27,8 +27,8 @@
   }
   &__confirmation {
     margin: 0;
-    font-size: getFontSize("regular");
-    line-height: 1.71;
+    font-size: getFontSize("order-label");
+    line-height: $line-height-regular;
     color: getColor("text");
   }
   &__link {
@@ -102,6 +102,17 @@
     &:hover,
     &:focus {
       border-color: getColor("brand");
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .order {
+    &__heading {
+      line-height: $line-height-regular;
+    }
+    &__confirmation {
+      font-size: getFontSize("regular");
+      line-height: 1.71;
     }
   }
 }

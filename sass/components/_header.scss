@@ -9,6 +9,7 @@
   position: relative;
   @include flex(row);
   justify-content: space-between;
+  align-items: center;
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 15px;
@@ -26,10 +27,8 @@
     display: none;
   }
   &__mobile {
-    position: absolute;
-    top: 18px;
-    right: -260px;
-    border: 1px solid teal;
+    width: 24px;
+    height: 24px;
   }
 }
 

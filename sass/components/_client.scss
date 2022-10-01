@@ -19,7 +19,6 @@
   &:hover,
   &:focus {
     outline: none;
-    fill: getColor("brand");
     border-color: getColor("brand");
   }
 }

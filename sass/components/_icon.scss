@@ -68,8 +68,8 @@
 }
 .icon__x {
   @include trans(fill);
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
 
   &:hover {
     fill: getColor("brand");

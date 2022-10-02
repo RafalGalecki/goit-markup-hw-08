@@ -4,6 +4,7 @@
 @import "../utils/variables";
 .modal {
   position: absolute;
+  @include flex(column);
   width: 90vw;
   min-width: 320px;
   height: auto;
@@ -15,13 +16,20 @@
   box-shadow: $box-shad-team;
   background-color: getColor("main");
 
+  &__close-block {
+    display: flex;
+    justify-content: flex-end;
+    height: 40px;
+    width: 100%;
+  }
+
   &__anime {
     transition-duration: 1500ms;
   }
   &__flex {
     @include flex(column);
     margin: auto;
-    padding: 40px;
+    padding: 0 40px 40px 40px;
   }
   &__backdrop {
     @include transModal;

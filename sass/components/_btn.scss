@@ -57,11 +57,12 @@
 .btn__close {
   @include cursorOutline;
   @include trans(border-color);
-  position: absolute;
+  @include flex(row);
+  margin-top: 8px;
+  margin-right: 8px;
+  padding: 0;
   width: 30px;
   height: 30px;
-  top: 8px;
-  right: 8px;
   border-width: 1px;
   border-style: solid;
   border-color: getColor("modal-close");
